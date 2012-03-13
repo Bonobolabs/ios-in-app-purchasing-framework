@@ -22,7 +22,6 @@
 		4CAEF98F150F36A60086F6E3 /* FakeSKProductsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF989150F36A60086F6E3 /* FakeSKProductsResponse.m */; };
 		4CAEF990150F36A60086F6E3 /* SKProductsRequest+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF98B150F36A60086F6E3 /* SKProductsRequest+Test.m */; };
 		4CAEF991150F36A60086F6E3 /* MockIAPCatalogueDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF98E150F36A60086F6E3 /* MockIAPCatalogueDelegate.m */; };
-		4CAEF9AA150F46D50086F6E3 /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAEF9A9150F46D50086F6E3 /* Cedar-iOS.framework */; };
 		4CAEF9AB150F46E40086F6E3 /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAEF9A9150F46D50086F6E3 /* Cedar-iOS.framework */; };
 		4CAEF9AD150F47540086F6E3 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAEF9AC150F47540086F6E3 /* StoreKit.framework */; };
 		4CAEF9AE150F477B0086F6E3 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAEF9AC150F47540086F6E3 /* StoreKit.framework */; };
@@ -83,7 +82,6 @@
 				4C4A52FB150F289500990664 /* UIKit.framework in Frameworks */,
 				4C4A52FD150F289500990664 /* Foundation.framework in Frameworks */,
 				4C4A52FF150F289500990664 /* CoreGraphics.framework in Frameworks */,
-				4CAEF9AA150F46D50086F6E3 /* Cedar-iOS.framework in Frameworks */,
 				4CAEF9AE150F477B0086F6E3 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,7 +208,8 @@
 				4CAEF9E4150F76CD0086F6E3 /* IAPCatalogue.m */,
 				4CAEF9E5150F76CD0086F6E3 /* README */,
 			);
-			path = InAppPurchasing;
+			name = InAppPurchasing;
+			path = InAppPurchasingExample/Externals/InAppPurchasing;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
