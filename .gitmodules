@@ -1,0 +1,3 @@
+[submodule "InAppPurchase"]
+	path = InAppPurchase
+	url = git@github.com:Bonobolabs/ios-in-app-purchase.git
