@@ -1,3 +1,9 @@
 [submodule "InAppPurchasingExample/Externals/InAppPurchasing"]
 	path = InAppPurchasingExample/Externals/InAppPurchasing
 	url = git@github.com:Bonobolabs/ios-in-app-purchasing.git
+[submodule "InAppPurchasingTests/Externals/FiniteStateMachine"]
+	path = InAppPurchasingTests/Externals/FiniteStateMachine
+	url = git@github.com:Bonobolabs/ios-finite-state-machine.git
+[submodule "InAppPurchasingExample/Externals/FiniteStateMachine"]
+	path = InAppPurchasingExample/Externals/FiniteStateMachine
+	url = git@github.com:Bonobolabs/ios-finite-state-machine.git
