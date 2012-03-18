@@ -6,6 +6,7 @@
 + (int)requestCount;
 + (void)resetAll;
 + (SKProductsRequest*)lastRequest;
++ (NSSet*)lastProductIdentifiers;
 
 - (BOOL)wasStarted;
 - (void)respondSuccess:(NSArray*)products;

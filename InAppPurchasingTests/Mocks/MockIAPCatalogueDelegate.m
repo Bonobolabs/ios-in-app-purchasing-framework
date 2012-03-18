@@ -3,52 +3,39 @@
 
 @interface MockIAPCatalogueDelegate() {
 @private
-    BOOL lpfcNotified, lpNotified, flNotified, fweNotified;
-    IAPCatalogue* lpfcCatalogue, *lpCatalogue, *flCatalogue, *fweCatalogue;
-    NSArray* lpfcProducts, *lpProducts;
+    BOOL lpNotified, flNotified, fweNotified;
+    IAPCatalogue* lpCatalogue, *flCatalogue, *fweCatalogue;
     NSError* fweError;
 }
 @end
 
 @implementation MockIAPCatalogueDelegate
 
-- (void)iapCatalogue:(IAPCatalogue*)catalogue didLoadProductsFromCache:(NSArray*)products {
-    lpfcNotified = YES;        
-    lpfcCatalogue = catalogue;
-    lpfcProducts = products;
-}
-
-- (void)iapCatalogue:(IAPCatalogue*)catalogue didLoadProducts:(NSArray*)products {
+- (void)iapCatalogueDidUpdate:(IAPCatalogue *)catalogue {
     lpNotified = YES;    
     lpCatalogue = catalogue;
-    lpProducts = products;
 }
 
-- (void)iapCatalogueDidFinishLoading:(IAPCatalogue*)catalogue {
+- (void)iapCatalogueDidFinishUpdating:(IAPCatalogue*)catalogue {
     flNotified = YES;
     flCatalogue = catalogue;
 }
 
-- (void)iapCatalogue:(IAPCatalogue *)catalogue didFailWithError:(NSError *)error {
+- (void)iapCatalogue:(IAPCatalogue *)catalogue updateFailedWithError:(NSError *)error {
     fweNotified = YES;
     fweCatalogue = catalogue;
     fweError = error;
 }
 
-
-- (BOOL)notifiedIAPCatalogue:(IAPCatalogue*)catalogue didLoadProductsFromCache:(NSArray*)products {
-    return lpfcNotified && lpfcCatalogue == catalogue && lpfcProducts == products;
+- (BOOL)notifiedIAPCatalogueDidUpdate:(IAPCatalogue*)catalogue {
+    return lpNotified && lpCatalogue == catalogue;
 }
 
-- (BOOL)notifiedIAPCatalogue:(IAPCatalogue*)catalogue didLoadProducts:(NSArray*)products {
-    return lpNotified && lpCatalogue == catalogue && lpProducts == products;
-}
-
-- (BOOL)notifiedIAPCatalogueDidFinishLoading:(IAPCatalogue*)catalogue {
+- (BOOL)notifiedIAPCatalogueDidFinishUpdating:(IAPCatalogue*)catalogue {
     return flNotified && flCatalogue == catalogue;
 }
 
-- (BOOL)notifiedIAPCatalogue:(IAPCatalogue *)catalogue didFailWithError:(NSError *)error {
+- (BOOL)notifiedIAPCatalogue:(IAPCatalogue *)catalogue updateFailedWithError:(NSError *)error {
     return fweNotified && fweCatalogue == catalogue && fweError == error;
 }
 

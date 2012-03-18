@@ -5,10 +5,12 @@
 
 static NSMutableArray *requests;
 static NSMutableArray *started;
+static NSMutableArray *identifiers;
 
 + (void)initialize {
     requests = [NSMutableArray array];
     started = [NSMutableArray array];
+    identifiers = [NSMutableArray array];
 }
 
 + (NSArray*)requests {
@@ -22,17 +24,24 @@ static NSMutableArray *started;
 + (void)resetAll {
     [requests removeAllObjects];
     [started removeAllObjects];
+    [identifiers removeAllObjects];
 }
 
 + (SKProductsRequest*)lastRequest {
     return [requests lastObject];
 }
 
++ (NSSet*)lastProductIdentifiers {
+    return [identifiers lastObject];
+}
+
+
 - (id)initWithProductIdentifiers:(NSSet *)productIdentifiers {
-    self = [super init];
+    self = [self init];
     
     if (self) {
         [requests addObject:self];
+        [identifiers addObject:productIdentifiers];
     }
     
     return self;
