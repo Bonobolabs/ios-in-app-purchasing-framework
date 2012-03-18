@@ -47,19 +47,40 @@ describe(@"IAPProduct", ^{
         });
     });
     
-    describe(@"isloading", ^{
-        it(@"should be loading if the price hasn't been set", ^{
+    describe(@"isLoading", ^{
+        it(@"should be loading if the product hasn't been updated with an SKProduct", ^{
             BOOL isLoading = product.isLoading;
             expect(isLoading).to(be_truthy());
         });
         
-        it(@"shouldn't be loading if the price has been set", ^ {
-            product.price = [NSDecimalNumber decimalNumberWithString:@"1.99"];
+        it(@"shouldn't be loading if the product has been updated with an SKProduct", ^{
+            NSDecimalNumber* price = [NSDecimalNumber decimalNumberWithString:@"1.99"];
+            id mockSKProduct = [OCMockObject mockForClass:[SKProduct class]];
+            [[[mockSKProduct stub] andReturn:price] price];
+            [product updateWithSKProduct:mockSKProduct];
+
             BOOL isLoading = product.isLoading;
             expect(isLoading).to_not(be_truthy());
         });
     });
     
+    describe(@"isReadyForSale", ^{
+        it(@"should be ready for sale if the product has been updated with an SKProduct", ^{
+            NSDecimalNumber* price = [NSDecimalNumber decimalNumberWithString:@"1.99"];
+            id mockSKProduct = [OCMockObject mockForClass:[SKProduct class]];
+            [[[mockSKProduct stub] andReturn:price] price];
+            [product updateWithSKProduct:mockSKProduct];
+            
+            BOOL isReadyForSale = product.isReadyForSale;
+            expect(isReadyForSale).to(be_truthy());
+        });
+        
+        it(@"shouldn't be ready for sale if the product hasn't been updated with an SKProduct", ^{
+            product.price = [NSDecimalNumber decimalNumberWithString:@"1.99"];
+            BOOL isReadyForSale = product.isReadyForSale;
+            expect(isReadyForSale).to_not(be_truthy());
+        });
+    });
 });
 
 SPEC_END

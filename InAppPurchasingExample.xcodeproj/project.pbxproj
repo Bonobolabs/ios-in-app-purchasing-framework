@@ -18,20 +18,23 @@
 		4C4A531C150F289500990664 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4A531B150F289500990664 /* SenTestingKit.framework */; };
 		4C4A531D150F289500990664 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4A52FA150F289500990664 /* UIKit.framework */; };
 		4C4A531E150F289500990664 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4A52FC150F289500990664 /* Foundation.framework */; };
-		4C5016491515A70E00C2DB9D /* IAPCatalogueSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C5016461515A70E00C2DB9D /* IAPCatalogueSpec.mm */; };
-		4C50164A1515A70E00C2DB9D /* IAPProductSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C5016471515A70E00C2DB9D /* IAPProductSpec.mm */; };
-		4C50164B1515A70E00C2DB9D /* IAPStoreManagerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C5016481515A70E00C2DB9D /* IAPStoreManagerSpec.mm */; };
 		4C5016501515A71F00C2DB9D /* NSTimer+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C50164F1515A71F00C2DB9D /* NSTimer+Test.m */; };
 		4C5016521515A72F00C2DB9D /* IAPInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C5016511515A72F00C2DB9D /* IAPInfo.plist */; };
-		4CAEF98F150F36A60086F6E3 /* FakeSKProductsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF989150F36A60086F6E3 /* FakeSKProductsResponse.m */; };
-		4CAEF990150F36A60086F6E3 /* SKProductsRequest+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF98B150F36A60086F6E3 /* SKProductsRequest+Test.m */; };
-		4CAEF991150F36A60086F6E3 /* MockIAPCatalogueDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF98E150F36A60086F6E3 /* MockIAPCatalogueDelegate.m */; };
+		4C5016541515A7AF00C2DB9D /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5016531515A7AF00C2DB9D /* libOCMock.a */; };
+		4C5016591515A82400C2DB9D /* IAPStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5016551515A82400C2DB9D /* IAPStoreManager.m */; };
+		4C50165A1515A82400C2DB9D /* IAPProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5016561515A82400C2DB9D /* IAPProduct.m */; };
+		4C50165B1515A8B000C2DB9D /* IAPCatalogueSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C5016461515A70E00C2DB9D /* IAPCatalogueSpec.mm */; };
+		4C50165C1515A8B000C2DB9D /* IAPProductSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C5016471515A70E00C2DB9D /* IAPProductSpec.mm */; };
+		4C50165D1515A8B000C2DB9D /* IAPStoreManagerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C5016481515A70E00C2DB9D /* IAPStoreManagerSpec.mm */; };
+		4C50165E1515A8C600C2DB9D /* FakeSKProductsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF989150F36A60086F6E3 /* FakeSKProductsResponse.m */; };
+		4C50165F1515A8C600C2DB9D /* SKProductsRequest+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF98B150F36A60086F6E3 /* SKProductsRequest+Test.m */; };
+		4C5016601515A8CF00C2DB9D /* MockIAPCatalogueDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF98E150F36A60086F6E3 /* MockIAPCatalogueDelegate.m */; };
+		4C50166A1515AF3E00C2DB9D /* FSMMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5016691515AF3E00C2DB9D /* FSMMachine.m */; };
 		4CAEF9AB150F46E40086F6E3 /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAEF9A9150F46D50086F6E3 /* Cedar-iOS.framework */; };
 		4CAEF9AD150F47540086F6E3 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAEF9AC150F47540086F6E3 /* StoreKit.framework */; };
 		4CAEF9AE150F477B0086F6E3 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAEF9AC150F47540086F6E3 /* StoreKit.framework */; };
 		4CAEF9D1150F72E50086F6E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CAEF9CE150F72C80086F6E3 /* InfoPlist.strings */; };
 		4CAEF9E6150F76CD0086F6E3 /* IAPCatalogue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF9E4150F76CD0086F6E3 /* IAPCatalogue.m */; };
-		4CAEF9E7150F76CD0086F6E3 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 4CAEF9E5150F76CD0086F6E3 /* README */; };
 		661D83371510F85300DE6CAE /* InAppPurchasingExample Frankified-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 661D83361510F85300DE6CAE /* InAppPurchasingExample Frankified-Info.plist */; };
 		661D83421510F88100DE6CAE /* my_first.feature in Resources */ = {isa = PBXBuildFile; fileRef = 661D833A1510F88100DE6CAE /* my_first.feature */; };
 		661D83431510F88100DE6CAE /* launch_steps.rb in Resources */ = {isa = PBXBuildFile; fileRef = 661D833C1510F88100DE6CAE /* launch_steps.rb */; };
@@ -46,9 +49,6 @@
 		661D836615111C7000DE6CAE /* ProductsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 661D836415111C7000DE6CAE /* ProductsController.m */; };
 		668786541510F7A70053F937 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A5306150F289500990664 /* main.m */; };
 		668786551510F7A70053F937 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A530A150F289500990664 /* AppDelegate.m */; };
-		668786571510F7A70053F937 /* FakeSKProductsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF989150F36A60086F6E3 /* FakeSKProductsResponse.m */; };
-		668786581510F7A70053F937 /* SKProductsRequest+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF98B150F36A60086F6E3 /* SKProductsRequest+Test.m */; };
-		668786591510F7A70053F937 /* MockIAPCatalogueDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF98E150F36A60086F6E3 /* MockIAPCatalogueDelegate.m */; };
 		6687865A1510F7A70053F937 /* IAPCatalogue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF9E4150F76CD0086F6E3 /* IAPCatalogue.m */; };
 		6687865C1510F7A70053F937 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4A52FA150F289500990664 /* UIKit.framework */; };
 		6687865D1510F7A70053F937 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4A52FC150F289500990664 /* Foundation.framework */; };
@@ -57,7 +57,6 @@
 		668786611510F7A70053F937 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A5303150F289500990664 /* InfoPlist.strings */; };
 		668786621510F7A70053F937 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A530C150F289500990664 /* MainStoryboard_iPhone.storyboard */; };
 		668786631510F7A70053F937 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A530F150F289500990664 /* MainStoryboard_iPad.storyboard */; };
-		668786641510F7A70053F937 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 4CAEF9E5150F76CD0086F6E3 /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +91,14 @@
 		4C50164E1515A71F00C2DB9D /* NSTimer+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Test.h"; sourceTree = "<group>"; };
 		4C50164F1515A71F00C2DB9D /* NSTimer+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Test.m"; sourceTree = "<group>"; };
 		4C5016511515A72F00C2DB9D /* IAPInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = IAPInfo.plist; sourceTree = "<group>"; };
+		4C5016531515A7AF00C2DB9D /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = InAppPurchasingTests/Externals/OCMock/libOCMock.a; sourceTree = "<group>"; };
+		4C5016551515A82400C2DB9D /* IAPStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPStoreManager.m; sourceTree = "<group>"; };
+		4C5016561515A82400C2DB9D /* IAPProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPProduct.m; sourceTree = "<group>"; };
+		4C5016571515A82400C2DB9D /* IAPProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPProduct.h; sourceTree = "<group>"; };
+		4C5016581515A82400C2DB9D /* IAPStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPStoreManager.h; sourceTree = "<group>"; };
+		4C5016661515AF1500C2DB9D /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		4C5016681515AF3E00C2DB9D /* FSMMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMMachine.h; sourceTree = "<group>"; };
+		4C5016691515AF3E00C2DB9D /* FSMMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMMachine.m; sourceTree = "<group>"; };
 		4CAEF981150F2BB40086F6E3 /* InAppPurchasingTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "InAppPurchasingTests-Info.plist"; path = "InAppPurchasingTests/InAppPurchasingTests-Info.plist"; sourceTree = SOURCE_ROOT; };
 		4CAEF988150F36A60086F6E3 /* FakeSKProductsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeSKProductsResponse.h; sourceTree = "<group>"; };
 		4CAEF989150F36A60086F6E3 /* FakeSKProductsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeSKProductsResponse.m; sourceTree = "<group>"; };
@@ -137,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C5016541515A7AF00C2DB9D /* libOCMock.a in Frameworks */,
 				4CAEF9AD150F47540086F6E3 /* StoreKit.framework in Frameworks */,
 				4CAEF9AB150F46E40086F6E3 /* Cedar-iOS.framework in Frameworks */,
 				4C4A531C150F289500990664 /* SenTestingKit.framework in Frameworks */,
@@ -165,6 +173,7 @@
 		4C4A52EB150F289400990664 = {
 			isa = PBXGroup;
 			children = (
+				4C5016531515A7AF00C2DB9D /* libOCMock.a */,
 				4C4A5300150F289500990664 /* InAppPurchasingExample */,
 				4C4A5321150F289500990664 /* InAppPurchasingTests */,
 				4C4A52F9150F289500990664 /* Frameworks */,
@@ -199,6 +208,7 @@
 		4C4A5300150F289500990664 /* InAppPurchasingExample */ = {
 			isa = PBXGroup;
 			children = (
+				4C5016651515AF1500C2DB9D /* FiniteStateMachine */,
 				661D83571511189B00DE6CAE /* Controllers */,
 				4CAEF9E2150F76CC0086F6E3 /* InAppPurchasing */,
 				4C4A5309150F289500990664 /* AppDelegate.h */,
@@ -254,6 +264,17 @@
 			path = Specs;
 			sourceTree = "<group>";
 		};
+		4C5016651515AF1500C2DB9D /* FiniteStateMachine */ = {
+			isa = PBXGroup;
+			children = (
+				4C5016661515AF1500C2DB9D /* README */,
+				4C5016681515AF3E00C2DB9D /* FSMMachine.h */,
+				4C5016691515AF3E00C2DB9D /* FSMMachine.m */,
+			);
+			name = FiniteStateMachine;
+			path = Externals/FiniteStateMachine;
+			sourceTree = "<group>";
+		};
 		4CAEF987150F36A60086F6E3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,6 +304,10 @@
 		4CAEF9E2150F76CC0086F6E3 /* InAppPurchasing */ = {
 			isa = PBXGroup;
 			children = (
+				4C5016551515A82400C2DB9D /* IAPStoreManager.m */,
+				4C5016581515A82400C2DB9D /* IAPStoreManager.h */,
+				4C5016561515A82400C2DB9D /* IAPProduct.m */,
+				4C5016571515A82400C2DB9D /* IAPProduct.h */,
 				4CAEF9E3150F76CD0086F6E3 /* IAPCatalogue.h */,
 				4CAEF9E4150F76CD0086F6E3 /* IAPCatalogue.m */,
 				4CAEF9E5150F76CD0086F6E3 /* README */,
@@ -431,7 +456,6 @@
 				4C4A5305150F289500990664 /* InfoPlist.strings in Resources */,
 				4C4A530E150F289500990664 /* MainStoryboard_iPhone.storyboard in Resources */,
 				4C4A5311150F289500990664 /* MainStoryboard_iPad.storyboard in Resources */,
-				4CAEF9E7150F76CD0086F6E3 /* README in Resources */,
 				661D83371510F85300DE6CAE /* InAppPurchasingExample Frankified-Info.plist in Resources */,
 				661D83421510F88100DE6CAE /* my_first.feature in Resources */,
 				661D83431510F88100DE6CAE /* launch_steps.rb in Resources */,
@@ -456,7 +480,6 @@
 				668786611510F7A70053F937 /* InfoPlist.strings in Resources */,
 				668786621510F7A70053F937 /* MainStoryboard_iPhone.storyboard in Resources */,
 				668786631510F7A70053F937 /* MainStoryboard_iPad.storyboard in Resources */,
-				668786641510F7A70053F937 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,16 +508,13 @@
 			files = (
 				4C4A5307150F289500990664 /* main.m in Sources */,
 				4C4A530B150F289500990664 /* AppDelegate.m in Sources */,
-				4CAEF98F150F36A60086F6E3 /* FakeSKProductsResponse.m in Sources */,
-				4CAEF990150F36A60086F6E3 /* SKProductsRequest+Test.m in Sources */,
-				4CAEF991150F36A60086F6E3 /* MockIAPCatalogueDelegate.m in Sources */,
 				4CAEF9E6150F76CD0086F6E3 /* IAPCatalogue.m in Sources */,
 				661D835A1511189B00DE6CAE /* MenuController.m in Sources */,
 				661D836515111C7000DE6CAE /* ProductsController.m in Sources */,
-				4C5016491515A70E00C2DB9D /* IAPCatalogueSpec.mm in Sources */,
-				4C50164A1515A70E00C2DB9D /* IAPProductSpec.mm in Sources */,
-				4C50164B1515A70E00C2DB9D /* IAPStoreManagerSpec.mm in Sources */,
 				4C5016501515A71F00C2DB9D /* NSTimer+Test.m in Sources */,
+				4C5016591515A82400C2DB9D /* IAPStoreManager.m in Sources */,
+				4C50165A1515A82400C2DB9D /* IAPProduct.m in Sources */,
+				4C50166A1515AF3E00C2DB9D /* FSMMachine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +522,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C50165B1515A8B000C2DB9D /* IAPCatalogueSpec.mm in Sources */,
+				4C50165C1515A8B000C2DB9D /* IAPProductSpec.mm in Sources */,
+				4C50165D1515A8B000C2DB9D /* IAPStoreManagerSpec.mm in Sources */,
+				4C50165E1515A8C600C2DB9D /* FakeSKProductsResponse.m in Sources */,
+				4C50165F1515A8C600C2DB9D /* SKProductsRequest+Test.m in Sources */,
+				4C5016601515A8CF00C2DB9D /* MockIAPCatalogueDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,9 +537,6 @@
 			files = (
 				668786541510F7A70053F937 /* main.m in Sources */,
 				668786551510F7A70053F937 /* AppDelegate.m in Sources */,
-				668786571510F7A70053F937 /* FakeSKProductsResponse.m in Sources */,
-				668786581510F7A70053F937 /* SKProductsRequest+Test.m in Sources */,
-				668786591510F7A70053F937 /* MockIAPCatalogueDelegate.m in Sources */,
 				6687865A1510F7A70053F937 /* IAPCatalogue.m in Sources */,
 				661D835B1511189B00DE6CAE /* MenuController.m in Sources */,
 				661D836615111C7000DE6CAE /* ProductsController.m in Sources */,
@@ -662,11 +685,18 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InAppPurchasingExample/InAppPurchasingExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/InAppPurchasingTests/Externals\"";
 				INFOPLIST_FILE = "InAppPurchasingTests/InAppPurchasingTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/InAppPurchasingTests/Externals/OCMock\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lstdc++",
 					"-all_load",
+					"-force_load",
+					"\"$(SRCROOT)/InAppPurchasingTests/Externals/OCMock/libOCMock.a\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -685,11 +715,18 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InAppPurchasingExample/InAppPurchasingExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/InAppPurchasingTests/Externals\"";
 				INFOPLIST_FILE = "InAppPurchasingTests/InAppPurchasingTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/InAppPurchasingTests/Externals/OCMock\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lstdc++",
 					"-all_load",
+					"-force_load",
+					"\"$(SRCROOT)/InAppPurchasingTests/Externals/OCMock/libOCMock.a\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";

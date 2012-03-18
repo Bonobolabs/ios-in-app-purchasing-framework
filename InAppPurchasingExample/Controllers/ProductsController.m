@@ -26,7 +26,7 @@
     [super viewDidLoad];
 	
     self.iapCatalogue = [[IAPCatalogue alloc] init];
-    [self.iapCatalogue load:self];
+    [self.iapCatalogue update:self];
     
 }
 
