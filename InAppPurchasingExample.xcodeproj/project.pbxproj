@@ -18,14 +18,11 @@
 		4C4A531C150F289500990664 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4A531B150F289500990664 /* SenTestingKit.framework */; };
 		4C4A531D150F289500990664 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4A52FA150F289500990664 /* UIKit.framework */; };
 		4C4A531E150F289500990664 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4A52FC150F289500990664 /* Foundation.framework */; };
-		4C5015FE1512119700C2DB9D /* IAPInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C5015FD1512119700C2DB9D /* IAPInfo.plist */; };
-		4C5016011512155300C2DB9D /* IAPProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5016001512155300C2DB9D /* IAPProduct.m */; };
-		4C5016031512167B00C2DB9D /* IAPCatalogueSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C5015F3151202F500C2DB9D /* IAPCatalogueSpec.mm */; };
-		4C50160B15122FEA00C2DB9D /* IAPProductSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C50160915122E5800C2DB9D /* IAPProductSpec.mm */; };
-		4C501613151243F900C2DB9D /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C501612151243F900C2DB9D /* libOCMock.a */; };
-		4C50161B15132DB500C2DB9D /* NSTimer+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C50161A15132DB400C2DB9D /* NSTimer+Test.m */; };
-		4C50161E1513307D00C2DB9D /* IAPStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C50161D1513307C00C2DB9D /* IAPStoreManager.m */; };
-		4C50161F1513343700C2DB9D /* IAPStoreManagerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C50161715131C3600C2DB9D /* IAPStoreManagerSpec.mm */; };
+		4C5016491515A70E00C2DB9D /* IAPCatalogueSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C5016461515A70E00C2DB9D /* IAPCatalogueSpec.mm */; };
+		4C50164A1515A70E00C2DB9D /* IAPProductSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C5016471515A70E00C2DB9D /* IAPProductSpec.mm */; };
+		4C50164B1515A70E00C2DB9D /* IAPStoreManagerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C5016481515A70E00C2DB9D /* IAPStoreManagerSpec.mm */; };
+		4C5016501515A71F00C2DB9D /* NSTimer+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C50164F1515A71F00C2DB9D /* NSTimer+Test.m */; };
+		4C5016521515A72F00C2DB9D /* IAPInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C5016511515A72F00C2DB9D /* IAPInfo.plist */; };
 		4CAEF98F150F36A60086F6E3 /* FakeSKProductsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF989150F36A60086F6E3 /* FakeSKProductsResponse.m */; };
 		4CAEF990150F36A60086F6E3 /* SKProductsRequest+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF98B150F36A60086F6E3 /* SKProductsRequest+Test.m */; };
 		4CAEF991150F36A60086F6E3 /* MockIAPCatalogueDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF98E150F36A60086F6E3 /* MockIAPCatalogueDelegate.m */; };
@@ -87,19 +84,14 @@
 		4C4A5310150F289500990664 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		4C4A531A150F289500990664 /* InAppPurchasingTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InAppPurchasingTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4A531B150F289500990664 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		4C5015F3151202F500C2DB9D /* IAPCatalogueSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IAPCatalogueSpec.mm; sourceTree = "<group>"; };
-		4C5015FD1512119700C2DB9D /* IAPInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = IAPInfo.plist; sourceTree = "<group>"; };
-		4C5015FF1512155300C2DB9D /* IAPProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPProduct.h; sourceTree = "<group>"; };
-		4C5016001512155300C2DB9D /* IAPProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPProduct.m; sourceTree = "<group>"; };
-		4C50160915122E5800C2DB9D /* IAPProductSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IAPProductSpec.mm; sourceTree = "<group>"; };
-		4C501612151243F900C2DB9D /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = InAppPurchasingTests/Externals/OCMock/libOCMock.a; sourceTree = "<group>"; };
-		4C50161715131C3600C2DB9D /* IAPStoreManagerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IAPStoreManagerSpec.mm; sourceTree = "<group>"; };
-		4C50161915132DB400C2DB9D /* NSTimer+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Test.h"; sourceTree = "<group>"; };
-		4C50161A15132DB400C2DB9D /* NSTimer+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Test.m"; sourceTree = "<group>"; };
-		4C50161C1513307C00C2DB9D /* IAPStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPStoreManager.h; sourceTree = "<group>"; };
-		4C50161D1513307C00C2DB9D /* IAPStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPStoreManager.m; sourceTree = "<group>"; };
-		4C50162015133C3200C2DB9D /* IAPStoreManager+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IAPStoreManager+Test.h"; sourceTree = "<group>"; };
-		4C5016321515A15800C2DB9D /* IAPProduct+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IAPProduct+Test.h"; sourceTree = "<group>"; };
+		4C5016461515A70E00C2DB9D /* IAPCatalogueSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IAPCatalogueSpec.mm; sourceTree = "<group>"; };
+		4C5016471515A70E00C2DB9D /* IAPProductSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IAPProductSpec.mm; sourceTree = "<group>"; };
+		4C5016481515A70E00C2DB9D /* IAPStoreManagerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IAPStoreManagerSpec.mm; sourceTree = "<group>"; };
+		4C50164C1515A71F00C2DB9D /* IAPProduct+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IAPProduct+Test.h"; sourceTree = "<group>"; };
+		4C50164D1515A71F00C2DB9D /* IAPStoreManager+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IAPStoreManager+Test.h"; sourceTree = "<group>"; };
+		4C50164E1515A71F00C2DB9D /* NSTimer+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Test.h"; sourceTree = "<group>"; };
+		4C50164F1515A71F00C2DB9D /* NSTimer+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Test.m"; sourceTree = "<group>"; };
+		4C5016511515A72F00C2DB9D /* IAPInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = IAPInfo.plist; sourceTree = "<group>"; };
 		4CAEF981150F2BB40086F6E3 /* InAppPurchasingTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "InAppPurchasingTests-Info.plist"; path = "InAppPurchasingTests/InAppPurchasingTests-Info.plist"; sourceTree = SOURCE_ROOT; };
 		4CAEF988150F36A60086F6E3 /* FakeSKProductsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeSKProductsResponse.h; sourceTree = "<group>"; };
 		4CAEF989150F36A60086F6E3 /* FakeSKProductsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeSKProductsResponse.m; sourceTree = "<group>"; };
@@ -145,7 +137,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C501613151243F900C2DB9D /* libOCMock.a in Frameworks */,
 				4CAEF9AD150F47540086F6E3 /* StoreKit.framework in Frameworks */,
 				4CAEF9AB150F46E40086F6E3 /* Cedar-iOS.framework in Frameworks */,
 				4C4A531C150F289500990664 /* SenTestingKit.framework in Frameworks */,
@@ -174,7 +165,6 @@
 		4C4A52EB150F289400990664 = {
 			isa = PBXGroup;
 			children = (
-				4C501612151243F900C2DB9D /* libOCMock.a */,
 				4C4A5300150F289500990664 /* InAppPurchasingExample */,
 				4C4A5321150F289500990664 /* InAppPurchasingTests */,
 				4C4A52F9150F289500990664 /* Frameworks */,
@@ -236,7 +226,7 @@
 		4C4A5321150F289500990664 /* InAppPurchasingTests */ = {
 			isa = PBXGroup;
 			children = (
-				4C5015F2151202F500C2DB9D /* Specs */,
+				4C5016451515A70E00C2DB9D /* Specs */,
 				4CAEF987150F36A60086F6E3 /* Helpers */,
 				4CAEF98C150F36A60086F6E3 /* Mocks */,
 				4C4A5322150F289500990664 /* Supporting Files */,
@@ -247,19 +237,19 @@
 		4C4A5322150F289500990664 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4C5016511515A72F00C2DB9D /* IAPInfo.plist */,
 				4CAEF9CE150F72C80086F6E3 /* InfoPlist.strings */,
 				4CAEF981150F2BB40086F6E3 /* InAppPurchasingTests-Info.plist */,
-				4C5015FD1512119700C2DB9D /* IAPInfo.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4C5015F2151202F500C2DB9D /* Specs */ = {
+		4C5016451515A70E00C2DB9D /* Specs */ = {
 			isa = PBXGroup;
 			children = (
-				4C5015F3151202F500C2DB9D /* IAPCatalogueSpec.mm */,
-				4C50160915122E5800C2DB9D /* IAPProductSpec.mm */,
-				4C50161715131C3600C2DB9D /* IAPStoreManagerSpec.mm */,
+				4C5016461515A70E00C2DB9D /* IAPCatalogueSpec.mm */,
+				4C5016471515A70E00C2DB9D /* IAPProductSpec.mm */,
+				4C5016481515A70E00C2DB9D /* IAPStoreManagerSpec.mm */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -267,14 +257,14 @@
 		4CAEF987150F36A60086F6E3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				4C50164C1515A71F00C2DB9D /* IAPProduct+Test.h */,
+				4C50164D1515A71F00C2DB9D /* IAPStoreManager+Test.h */,
+				4C50164E1515A71F00C2DB9D /* NSTimer+Test.h */,
+				4C50164F1515A71F00C2DB9D /* NSTimer+Test.m */,
 				4CAEF988150F36A60086F6E3 /* FakeSKProductsResponse.h */,
 				4CAEF989150F36A60086F6E3 /* FakeSKProductsResponse.m */,
 				4CAEF98A150F36A60086F6E3 /* SKProductsRequest+Test.h */,
 				4CAEF98B150F36A60086F6E3 /* SKProductsRequest+Test.m */,
-				4C50161915132DB400C2DB9D /* NSTimer+Test.h */,
-				4C50161A15132DB400C2DB9D /* NSTimer+Test.m */,
-				4C50162015133C3200C2DB9D /* IAPStoreManager+Test.h */,
-				4C5016321515A15800C2DB9D /* IAPProduct+Test.h */,
 			);
 			name = Helpers;
 			path = InAppPurchasingTests/Helpers;
@@ -293,12 +283,8 @@
 		4CAEF9E2150F76CC0086F6E3 /* InAppPurchasing */ = {
 			isa = PBXGroup;
 			children = (
-				4C50161C1513307C00C2DB9D /* IAPStoreManager.h */,
-				4C50161D1513307C00C2DB9D /* IAPStoreManager.m */,
 				4CAEF9E3150F76CD0086F6E3 /* IAPCatalogue.h */,
 				4CAEF9E4150F76CD0086F6E3 /* IAPCatalogue.m */,
-				4C5015FF1512155300C2DB9D /* IAPProduct.h */,
-				4C5016001512155300C2DB9D /* IAPProduct.m */,
 				4CAEF9E5150F76CD0086F6E3 /* README */,
 			);
 			name = InAppPurchasing;
@@ -446,12 +432,12 @@
 				4C4A530E150F289500990664 /* MainStoryboard_iPhone.storyboard in Resources */,
 				4C4A5311150F289500990664 /* MainStoryboard_iPad.storyboard in Resources */,
 				4CAEF9E7150F76CD0086F6E3 /* README in Resources */,
-				4C5015FE1512119700C2DB9D /* IAPInfo.plist in Resources */,
 				661D83371510F85300DE6CAE /* InAppPurchasingExample Frankified-Info.plist in Resources */,
 				661D83421510F88100DE6CAE /* my_first.feature in Resources */,
 				661D83431510F88100DE6CAE /* launch_steps.rb in Resources */,
 				661D83441510F88100DE6CAE /* env.rb in Resources */,
 				661D83451510F88100DE6CAE /* frank_static_resources.bundle in Resources */,
+				4C5016521515A72F00C2DB9D /* IAPInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,11 +489,12 @@
 				4CAEF990150F36A60086F6E3 /* SKProductsRequest+Test.m in Sources */,
 				4CAEF991150F36A60086F6E3 /* MockIAPCatalogueDelegate.m in Sources */,
 				4CAEF9E6150F76CD0086F6E3 /* IAPCatalogue.m in Sources */,
-				4C5016011512155300C2DB9D /* IAPProduct.m in Sources */,
-				4C50161B15132DB500C2DB9D /* NSTimer+Test.m in Sources */,
-				4C50161E1513307D00C2DB9D /* IAPStoreManager.m in Sources */,
 				661D835A1511189B00DE6CAE /* MenuController.m in Sources */,
 				661D836515111C7000DE6CAE /* ProductsController.m in Sources */,
+				4C5016491515A70E00C2DB9D /* IAPCatalogueSpec.mm in Sources */,
+				4C50164A1515A70E00C2DB9D /* IAPProductSpec.mm in Sources */,
+				4C50164B1515A70E00C2DB9D /* IAPStoreManagerSpec.mm in Sources */,
+				4C5016501515A71F00C2DB9D /* NSTimer+Test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,9 +502,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C5016031512167B00C2DB9D /* IAPCatalogueSpec.mm in Sources */,
-				4C50160B15122FEA00C2DB9D /* IAPProductSpec.mm in Sources */,
-				4C50161F1513343700C2DB9D /* IAPStoreManagerSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,18 +662,11 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InAppPurchasingExample/InAppPurchasingExample-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/InAppPurchasingTests/Externals/\"";
 				INFOPLIST_FILE = "InAppPurchasingTests/InAppPurchasingTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/InAppPurchasingTests/Externals/OCMock\"",
-				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lstdc++",
 					"-all_load",
-					"-force_load",
-					"\"$(SRCROOT)/InAppPurchasingTests/Externals/OCMock/libOCMock.a\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -708,18 +685,11 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InAppPurchasingExample/InAppPurchasingExample-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/InAppPurchasingTests/Externals/\"";
 				INFOPLIST_FILE = "InAppPurchasingTests/InAppPurchasingTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/InAppPurchasingTests/Externals/OCMock\"",
-				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lstdc++",
 					"-all_load",
-					"-force_load",
-					"\"$(SRCROOT)/InAppPurchasingTests/Externals/OCMock/libOCMock.a\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
