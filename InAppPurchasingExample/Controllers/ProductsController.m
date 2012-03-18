@@ -1,18 +1,21 @@
 //
-//  ViewController.m
-//  InAppPurchaseExample
+//  ProductsController.m
+//  InAppPurchasingExample
 //
-//  Created by Michael Del Borrello on 13/03/12.
+//  Created by Adam Darton on 12-03-14.
 //  Copyright (c) 2012 Bonobo. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ProductsController.h"
 
-@implementation ViewController
+@implementation ProductsController
+
+@synthesize iapCatalogue;
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+    
     // Release any cached data, images, etc that aren't in use.
 }
 
@@ -21,7 +24,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    self.iapCatalogue = [[IAPCatalogue alloc] init];
+    [self.iapCatalogue load:self];
+    
 }
 
 - (void)viewDidUnload
@@ -59,6 +65,28 @@
     } else {
         return YES;
     }
+}
+
+#pragma mark - Button Actions -
+
+-(IBAction)onBackButtonTouchUp:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+#pragma mark - IAPCatalogueDelegate -
+
+-(void)iapCatalogue:(IAPCatalogue*)catalogue didLoadProductsFromCache:(NSArray*)products{
+    NSLog(@"Loaded From Cache %d", [products count]);
+    
+}
+-(void)iapCatalogue:(IAPCatalogue*)catalogue didLoadProducts:(NSArray*)products{
+    NSLog(@"Loaded %d", [products count]);
+}
+-(void)iapCatalogueDidFinishLoading:(IAPCatalogue*)catalogue{
+    NSLog(@"Loaded catalogue");    
+}
+-(void)iapCatalogue:(IAPCatalogue*)catalogue didFailWithError:(NSError*)error{
+    NSLog(@"Failed: %@", error.description);    
 }
 
 @end

@@ -15,7 +15,6 @@
 		4C4A530B150F289500990664 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A530A150F289500990664 /* AppDelegate.m */; };
 		4C4A530E150F289500990664 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A530C150F289500990664 /* MainStoryboard_iPhone.storyboard */; };
 		4C4A5311150F289500990664 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A530F150F289500990664 /* MainStoryboard_iPad.storyboard */; };
-		4C4A5314150F289500990664 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A5313150F289500990664 /* ViewController.m */; };
 		4C4A531C150F289500990664 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4A531B150F289500990664 /* SenTestingKit.framework */; };
 		4C4A531D150F289500990664 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4A52FA150F289500990664 /* UIKit.framework */; };
 		4C4A531E150F289500990664 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4A52FC150F289500990664 /* Foundation.framework */; };
@@ -36,6 +35,32 @@
 		4CAEF9D1150F72E50086F6E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CAEF9CE150F72C80086F6E3 /* InfoPlist.strings */; };
 		4CAEF9E6150F76CD0086F6E3 /* IAPCatalogue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF9E4150F76CD0086F6E3 /* IAPCatalogue.m */; };
 		4CAEF9E7150F76CD0086F6E3 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 4CAEF9E5150F76CD0086F6E3 /* README */; };
+		661D83371510F85300DE6CAE /* InAppPurchasingExample Frankified-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 661D83361510F85300DE6CAE /* InAppPurchasingExample Frankified-Info.plist */; };
+		661D83421510F88100DE6CAE /* my_first.feature in Resources */ = {isa = PBXBuildFile; fileRef = 661D833A1510F88100DE6CAE /* my_first.feature */; };
+		661D83431510F88100DE6CAE /* launch_steps.rb in Resources */ = {isa = PBXBuildFile; fileRef = 661D833C1510F88100DE6CAE /* launch_steps.rb */; };
+		661D83441510F88100DE6CAE /* env.rb in Resources */ = {isa = PBXBuildFile; fileRef = 661D833E1510F88100DE6CAE /* env.rb */; };
+		661D83451510F88100DE6CAE /* frank_static_resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 661D833F1510F88100DE6CAE /* frank_static_resources.bundle */; };
+		661D83481510F8BE00DE6CAE /* libFrank.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 661D83401510F88100DE6CAE /* libFrank.a */; };
+		661D83491510F8BE00DE6CAE /* libShelley.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 661D83411510F88100DE6CAE /* libShelley.a */; };
+		661D834C1510F8E800DE6CAE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 661D834A1510F8C600DE6CAE /* CFNetwork.framework */; };
+		661D835A1511189B00DE6CAE /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 661D83591511189B00DE6CAE /* MenuController.m */; };
+		661D835B1511189B00DE6CAE /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 661D83591511189B00DE6CAE /* MenuController.m */; };
+		661D836515111C7000DE6CAE /* ProductsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 661D836415111C7000DE6CAE /* ProductsController.m */; };
+		661D836615111C7000DE6CAE /* ProductsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 661D836415111C7000DE6CAE /* ProductsController.m */; };
+		668786541510F7A70053F937 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A5306150F289500990664 /* main.m */; };
+		668786551510F7A70053F937 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A530A150F289500990664 /* AppDelegate.m */; };
+		668786571510F7A70053F937 /* FakeSKProductsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF989150F36A60086F6E3 /* FakeSKProductsResponse.m */; };
+		668786581510F7A70053F937 /* SKProductsRequest+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF98B150F36A60086F6E3 /* SKProductsRequest+Test.m */; };
+		668786591510F7A70053F937 /* MockIAPCatalogueDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF98E150F36A60086F6E3 /* MockIAPCatalogueDelegate.m */; };
+		6687865A1510F7A70053F937 /* IAPCatalogue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF9E4150F76CD0086F6E3 /* IAPCatalogue.m */; };
+		6687865C1510F7A70053F937 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4A52FA150F289500990664 /* UIKit.framework */; };
+		6687865D1510F7A70053F937 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4A52FC150F289500990664 /* Foundation.framework */; };
+		6687865E1510F7A70053F937 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4A52FE150F289500990664 /* CoreGraphics.framework */; };
+		6687865F1510F7A70053F937 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAEF9AC150F47540086F6E3 /* StoreKit.framework */; };
+		668786611510F7A70053F937 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A5303150F289500990664 /* InfoPlist.strings */; };
+		668786621510F7A70053F937 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A530C150F289500990664 /* MainStoryboard_iPhone.storyboard */; };
+		668786631510F7A70053F937 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A530F150F289500990664 /* MainStoryboard_iPad.storyboard */; };
+		668786641510F7A70053F937 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 4CAEF9E5150F76CD0086F6E3 /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +85,6 @@
 		4C4A530A150F289500990664 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4C4A530D150F289500990664 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		4C4A5310150F289500990664 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		4C4A5312150F289500990664 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4C4A5313150F289500990664 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4C4A531A150F289500990664 /* InAppPurchasingTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InAppPurchasingTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4A531B150F289500990664 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		4C5015F3151202F500C2DB9D /* IAPCatalogueSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IAPCatalogueSpec.mm; sourceTree = "<group>"; };
@@ -91,6 +114,19 @@
 		4CAEF9E3150F76CD0086F6E3 /* IAPCatalogue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPCatalogue.h; sourceTree = "<group>"; };
 		4CAEF9E4150F76CD0086F6E3 /* IAPCatalogue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPCatalogue.m; sourceTree = "<group>"; };
 		4CAEF9E5150F76CD0086F6E3 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		661D83361510F85300DE6CAE /* InAppPurchasingExample Frankified-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "InAppPurchasingExample Frankified-Info.plist"; sourceTree = "<group>"; };
+		661D833A1510F88100DE6CAE /* my_first.feature */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = my_first.feature; sourceTree = "<group>"; };
+		661D833C1510F88100DE6CAE /* launch_steps.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = launch_steps.rb; sourceTree = "<group>"; };
+		661D833E1510F88100DE6CAE /* env.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = env.rb; sourceTree = "<group>"; };
+		661D833F1510F88100DE6CAE /* frank_static_resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = frank_static_resources.bundle; sourceTree = "<group>"; };
+		661D83401510F88100DE6CAE /* libFrank.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFrank.a; sourceTree = "<group>"; };
+		661D83411510F88100DE6CAE /* libShelley.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libShelley.a; sourceTree = "<group>"; };
+		661D834A1510F8C600DE6CAE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		661D83581511189B00DE6CAE /* MenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuController.h; sourceTree = "<group>"; };
+		661D83591511189B00DE6CAE /* MenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuController.m; sourceTree = "<group>"; };
+		661D836315111C7000DE6CAE /* ProductsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsController.h; sourceTree = "<group>"; };
+		661D836415111C7000DE6CAE /* ProductsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsController.m; sourceTree = "<group>"; };
+		668786681510F7A70053F937 /* InAppPurchasingExample Frankified.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InAppPurchasingExample Frankified.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +154,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6687865B1510F7A70053F937 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				661D834C1510F8E800DE6CAE /* CFNetwork.framework in Frameworks */,
+				661D83481510F8BE00DE6CAE /* libFrank.a in Frameworks */,
+				661D83491510F8BE00DE6CAE /* libShelley.a in Frameworks */,
+				6687865C1510F7A70053F937 /* UIKit.framework in Frameworks */,
+				6687865D1510F7A70053F937 /* Foundation.framework in Frameworks */,
+				6687865E1510F7A70053F937 /* CoreGraphics.framework in Frameworks */,
+				6687865F1510F7A70053F937 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -137,6 +187,7 @@
 			children = (
 				4C4A52F6150F289500990664 /* InAppPurchasingExample.app */,
 				4C4A531A150F289500990664 /* InAppPurchasingTests.octest */,
+				668786681510F7A70053F937 /* InAppPurchasingExample Frankified.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,6 +195,7 @@
 		4C4A52F9150F289500990664 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				661D834A1510F8C600DE6CAE /* CFNetwork.framework */,
 				4CAEF9AC150F47540086F6E3 /* StoreKit.framework */,
 				4CAEF9A9150F46D50086F6E3 /* Cedar-iOS.framework */,
 				4C4A52FA150F289500990664 /* UIKit.framework */,
@@ -157,13 +209,13 @@
 		4C4A5300150F289500990664 /* InAppPurchasingExample */ = {
 			isa = PBXGroup;
 			children = (
+				661D83571511189B00DE6CAE /* Controllers */,
 				4CAEF9E2150F76CC0086F6E3 /* InAppPurchasing */,
 				4C4A5309150F289500990664 /* AppDelegate.h */,
 				4C4A530A150F289500990664 /* AppDelegate.m */,
 				4C4A530C150F289500990664 /* MainStoryboard_iPhone.storyboard */,
 				4C4A530F150F289500990664 /* MainStoryboard_iPad.storyboard */,
-				4C4A5312150F289500990664 /* ViewController.h */,
-				4C4A5313150F289500990664 /* ViewController.m */,
+				661D83381510F88100DE6CAE /* Frank */,
 				4C4A5301150F289500990664 /* Supporting Files */,
 			);
 			path = InAppPurchasingExample;
@@ -172,6 +224,7 @@
 		4C4A5301150F289500990664 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				661D83361510F85300DE6CAE /* InAppPurchasingExample Frankified-Info.plist */,
 				4CAEF9DF150F75B70086F6E3 /* InAppPurchasingExample-Info.plist */,
 				4C4A5303150F289500990664 /* InfoPlist.strings */,
 				4C4A5306150F289500990664 /* main.m */,
@@ -252,6 +305,54 @@
 			path = InAppPurchasingExample/Externals/InAppPurchasing;
 			sourceTree = SOURCE_ROOT;
 		};
+		661D83381510F88100DE6CAE /* Frank */ = {
+			isa = PBXGroup;
+			children = (
+				661D83391510F88100DE6CAE /* features */,
+				661D833F1510F88100DE6CAE /* frank_static_resources.bundle */,
+				661D83401510F88100DE6CAE /* libFrank.a */,
+				661D83411510F88100DE6CAE /* libShelley.a */,
+			);
+			path = Frank;
+			sourceTree = "<group>";
+		};
+		661D83391510F88100DE6CAE /* features */ = {
+			isa = PBXGroup;
+			children = (
+				661D833A1510F88100DE6CAE /* my_first.feature */,
+				661D833B1510F88100DE6CAE /* step_definitions */,
+				661D833D1510F88100DE6CAE /* support */,
+			);
+			path = features;
+			sourceTree = "<group>";
+		};
+		661D833B1510F88100DE6CAE /* step_definitions */ = {
+			isa = PBXGroup;
+			children = (
+				661D833C1510F88100DE6CAE /* launch_steps.rb */,
+			);
+			path = step_definitions;
+			sourceTree = "<group>";
+		};
+		661D833D1510F88100DE6CAE /* support */ = {
+			isa = PBXGroup;
+			children = (
+				661D833E1510F88100DE6CAE /* env.rb */,
+			);
+			path = support;
+			sourceTree = "<group>";
+		};
+		661D83571511189B00DE6CAE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				661D83581511189B00DE6CAE /* MenuController.h */,
+				661D83591511189B00DE6CAE /* MenuController.m */,
+				661D836315111C7000DE6CAE /* ProductsController.h */,
+				661D836415111C7000DE6CAE /* ProductsController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -291,6 +392,23 @@
 			productReference = 4C4A531A150F289500990664 /* InAppPurchasingTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		668786521510F7A70053F937 /* InAppPurchasingExample Frankified */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 668786651510F7A70053F937 /* Build configuration list for PBXNativeTarget "InAppPurchasingExample Frankified" */;
+			buildPhases = (
+				668786531510F7A70053F937 /* Sources */,
+				6687865B1510F7A70053F937 /* Frameworks */,
+				668786601510F7A70053F937 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "InAppPurchasingExample Frankified";
+			productName = InAppPurchaseExample;
+			productReference = 668786681510F7A70053F937 /* InAppPurchasingExample Frankified.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -313,6 +431,7 @@
 			projectRoot = "";
 			targets = (
 				4C4A52F5150F289500990664 /* InAppPurchasingExample */,
+				668786521510F7A70053F937 /* InAppPurchasingExample Frankified */,
 				4C4A5319150F289500990664 /* InAppPurchasingTests */,
 			);
 		};
@@ -328,6 +447,11 @@
 				4C4A5311150F289500990664 /* MainStoryboard_iPad.storyboard in Resources */,
 				4CAEF9E7150F76CD0086F6E3 /* README in Resources */,
 				4C5015FE1512119700C2DB9D /* IAPInfo.plist in Resources */,
+				661D83371510F85300DE6CAE /* InAppPurchasingExample Frankified-Info.plist in Resources */,
+				661D83421510F88100DE6CAE /* my_first.feature in Resources */,
+				661D83431510F88100DE6CAE /* launch_steps.rb in Resources */,
+				661D83441510F88100DE6CAE /* env.rb in Resources */,
+				661D83451510F88100DE6CAE /* frank_static_resources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +460,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CAEF9D1150F72E50086F6E3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		668786601510F7A70053F937 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				668786611510F7A70053F937 /* InfoPlist.strings in Resources */,
+				668786621510F7A70053F937 /* MainStoryboard_iPhone.storyboard in Resources */,
+				668786631510F7A70053F937 /* MainStoryboard_iPad.storyboard in Resources */,
+				668786641510F7A70053F937 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +499,6 @@
 			files = (
 				4C4A5307150F289500990664 /* main.m in Sources */,
 				4C4A530B150F289500990664 /* AppDelegate.m in Sources */,
-				4C4A5314150F289500990664 /* ViewController.m in Sources */,
 				4CAEF98F150F36A60086F6E3 /* FakeSKProductsResponse.m in Sources */,
 				4CAEF990150F36A60086F6E3 /* SKProductsRequest+Test.m in Sources */,
 				4CAEF991150F36A60086F6E3 /* MockIAPCatalogueDelegate.m in Sources */,
@@ -372,6 +506,8 @@
 				4C5016011512155300C2DB9D /* IAPProduct.m in Sources */,
 				4C50161B15132DB500C2DB9D /* NSTimer+Test.m in Sources */,
 				4C50161E1513307D00C2DB9D /* IAPStoreManager.m in Sources */,
+				661D835A1511189B00DE6CAE /* MenuController.m in Sources */,
+				661D836515111C7000DE6CAE /* ProductsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +518,21 @@
 				4C5016031512167B00C2DB9D /* IAPCatalogueSpec.mm in Sources */,
 				4C50160B15122FEA00C2DB9D /* IAPProductSpec.mm in Sources */,
 				4C50161F1513343700C2DB9D /* IAPStoreManagerSpec.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		668786531510F7A70053F937 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				668786541510F7A70053F937 /* main.m in Sources */,
+				668786551510F7A70053F937 /* AppDelegate.m in Sources */,
+				668786571510F7A70053F937 /* FakeSKProductsResponse.m in Sources */,
+				668786581510F7A70053F937 /* SKProductsRequest+Test.m in Sources */,
+				668786591510F7A70053F937 /* MockIAPCatalogueDelegate.m in Sources */,
+				6687865A1510F7A70053F937 /* IAPCatalogue.m in Sources */,
+				661D835B1511189B00DE6CAE /* MenuController.m in Sources */,
+				661D836615111C7000DE6CAE /* ProductsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +639,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InAppPurchasingExample/InAppPurchasingExample-Prefix.pch";
 				INFOPLIST_FILE = "InAppPurchasingExample/InAppPurchasingExample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/InAppPurchasingExample/Frank\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -503,6 +658,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InAppPurchasingExample/InAppPurchasingExample-Prefix.pch";
 				INFOPLIST_FILE = "InAppPurchasingExample/InAppPurchasingExample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/InAppPurchasingExample/Frank\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -568,6 +727,52 @@
 			};
 			name = Release;
 		};
+		668786661510F7A70053F937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/InAppPurchasingTests/Externals\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InAppPurchasingExample/InAppPurchasingExample-Prefix.pch";
+				INFOPLIST_FILE = "InAppPurchasingExample/InAppPurchasingExample Frankified-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/InAppPurchasingExample/Frank\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "InAppPurchasingExample Frankified";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		668786671510F7A70053F937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/InAppPurchasingTests/Externals\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InAppPurchasingExample/InAppPurchasingExample-Prefix.pch";
+				INFOPLIST_FILE = "InAppPurchasingExample/InAppPurchasingExample Frankified-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/InAppPurchasingExample/Frank\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "InAppPurchasingExample Frankified";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -594,6 +799,15 @@
 			buildConfigurations = (
 				4C4A5330150F289500990664 /* Debug */,
 				4C4A5331150F289500990664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		668786651510F7A70053F937 /* Build configuration list for PBXNativeTarget "InAppPurchasingExample Frankified" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				668786661510F7A70053F937 /* Debug */,
+				668786671510F7A70053F937 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
