@@ -41,18 +41,6 @@
 		4CC06685152348FD000E89ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC06681152348FD000E89ED /* ViewController.m */; };
 		4CC06686152348FD000E89ED /* ProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC06684152348FD000E89ED /* ProductTableViewCell.m */; };
 		4CC0668815234C4B000E89ED /* IAPInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CC0668715234C4B000E89ED /* IAPInfo.plist */; };
-		661D83371510F85300DE6CAE /* InAppPurchasingExample Frankified-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 661D83361510F85300DE6CAE /* InAppPurchasingExample Frankified-Info.plist */; };
-		661D834C1510F8E800DE6CAE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 661D834A1510F8C600DE6CAE /* CFNetwork.framework */; };
-		668786541510F7A70053F937 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A5306150F289500990664 /* main.m */; };
-		668786551510F7A70053F937 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A530A150F289500990664 /* AppDelegate.m */; };
-		6687865A1510F7A70053F937 /* IAPCatalogue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF9E4150F76CD0086F6E3 /* IAPCatalogue.m */; };
-		6687865C1510F7A70053F937 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4A52FA150F289500990664 /* UIKit.framework */; };
-		6687865D1510F7A70053F937 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4A52FC150F289500990664 /* Foundation.framework */; };
-		6687865E1510F7A70053F937 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4A52FE150F289500990664 /* CoreGraphics.framework */; };
-		6687865F1510F7A70053F937 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAEF9AC150F47540086F6E3 /* StoreKit.framework */; };
-		668786611510F7A70053F937 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A5303150F289500990664 /* InfoPlist.strings */; };
-		668786621510F7A70053F937 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A530C150F289500990664 /* MainStoryboard_iPhone.storyboard */; };
-		668786631510F7A70053F937 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A530F150F289500990664 /* MainStoryboard_iPad.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,9 +105,7 @@
 		4CC06683152348FD000E89ED /* ProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductTableViewCell.h; sourceTree = "<group>"; };
 		4CC06684152348FD000E89ED /* ProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductTableViewCell.m; sourceTree = "<group>"; };
 		4CC0668715234C4B000E89ED /* IAPInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = IAPInfo.plist; sourceTree = "<group>"; };
-		661D83361510F85300DE6CAE /* InAppPurchasingExample Frankified-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "InAppPurchasingExample Frankified-Info.plist"; sourceTree = "<group>"; };
 		661D834A1510F8C600DE6CAE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		668786681510F7A70053F937 /* InAppPurchasingExample Frankified.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InAppPurchasingExample Frankified.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,18 +133,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6687865B1510F7A70053F937 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				661D834C1510F8E800DE6CAE /* CFNetwork.framework in Frameworks */,
-				6687865C1510F7A70053F937 /* UIKit.framework in Frameworks */,
-				6687865D1510F7A70053F937 /* Foundation.framework in Frameworks */,
-				6687865E1510F7A70053F937 /* CoreGraphics.framework in Frameworks */,
-				6687865F1510F7A70053F937 /* StoreKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -177,7 +151,6 @@
 			children = (
 				4C4A52F6150F289500990664 /* InAppPurchasingExample.app */,
 				4C4A531A150F289500990664 /* InAppPurchasingTests.octest */,
-				668786681510F7A70053F937 /* InAppPurchasingExample Frankified.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -215,7 +188,6 @@
 		4C4A5301150F289500990664 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				661D83361510F85300DE6CAE /* InAppPurchasingExample Frankified-Info.plist */,
 				4CAEF9DF150F75B70086F6E3 /* InAppPurchasingExample-Info.plist */,
 				4C4A5303150F289500990664 /* InfoPlist.strings */,
 				4C4A5306150F289500990664 /* main.m */,
@@ -360,23 +332,6 @@
 			productReference = 4C4A531A150F289500990664 /* InAppPurchasingTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
-		668786521510F7A70053F937 /* InAppPurchasingExample Frankified */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 668786651510F7A70053F937 /* Build configuration list for PBXNativeTarget "InAppPurchasingExample Frankified" */;
-			buildPhases = (
-				668786531510F7A70053F937 /* Sources */,
-				6687865B1510F7A70053F937 /* Frameworks */,
-				668786601510F7A70053F937 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "InAppPurchasingExample Frankified";
-			productName = InAppPurchaseExample;
-			productReference = 668786681510F7A70053F937 /* InAppPurchasingExample Frankified.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -399,7 +354,6 @@
 			projectRoot = "";
 			targets = (
 				4C4A52F5150F289500990664 /* InAppPurchasingExample */,
-				668786521510F7A70053F937 /* InAppPurchasingExample Frankified */,
 				4C4A5319150F289500990664 /* InAppPurchasingTests */,
 			);
 		};
@@ -413,7 +367,6 @@
 				4C4A5305150F289500990664 /* InfoPlist.strings in Resources */,
 				4C4A530E150F289500990664 /* MainStoryboard_iPhone.storyboard in Resources */,
 				4C4A5311150F289500990664 /* MainStoryboard_iPad.storyboard in Resources */,
-				661D83371510F85300DE6CAE /* InAppPurchasingExample Frankified-Info.plist in Resources */,
 				4C5016521515A72F00C2DB9D /* IAPInfo.plist in Resources */,
 				4CC065C2151DCC40000E89ED /* IAPProduct+Friend.h in Resources */,
 				4CC0668815234C4B000E89ED /* IAPInfo.plist in Resources */,
@@ -426,16 +379,6 @@
 			files = (
 				4CAEF9D1150F72E50086F6E3 /* InfoPlist.strings in Resources */,
 				4C85CA2C1516E9A9007E63B0 /* IAPCatalogue+Test.h in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		668786601510F7A70053F937 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				668786611510F7A70053F937 /* InfoPlist.strings in Resources */,
-				668786621510F7A70053F937 /* MainStoryboard_iPhone.storyboard in Resources */,
-				668786631510F7A70053F937 /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,16 +428,6 @@
 				4C50165E1515A8C600C2DB9D /* FakeSKProductsResponse.m in Sources */,
 				4C50165F1515A8C600C2DB9D /* SKProductsRequest+Test.m in Sources */,
 				4C5016601515A8CF00C2DB9D /* MockIAPCatalogueDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		668786531510F7A70053F937 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				668786541510F7A70053F937 /* main.m in Sources */,
-				668786551510F7A70053F937 /* AppDelegate.m in Sources */,
-				6687865A1510F7A70053F937 /* IAPCatalogue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,52 +622,6 @@
 			};
 			name = Release;
 		};
-		668786661510F7A70053F937 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/InAppPurchasingTests/Externals\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "InAppPurchasingExample/InAppPurchasingExample-Prefix.pch";
-				INFOPLIST_FILE = "InAppPurchasingExample/InAppPurchasingExample Frankified-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/InAppPurchasingExample/Frank\"",
-				);
-				OTHER_LDFLAGS = (
-					"-all_load",
-					"-ObjC",
-				);
-				PRODUCT_NAME = "InAppPurchasingExample Frankified";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		668786671510F7A70053F937 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/InAppPurchasingTests/Externals\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "InAppPurchasingExample/InAppPurchasingExample-Prefix.pch";
-				INFOPLIST_FILE = "InAppPurchasingExample/InAppPurchasingExample Frankified-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/InAppPurchasingExample/Frank\"",
-				);
-				OTHER_LDFLAGS = (
-					"-all_load",
-					"-ObjC",
-				);
-				PRODUCT_NAME = "InAppPurchasingExample Frankified";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -761,15 +648,6 @@
 			buildConfigurations = (
 				4C4A5330150F289500990664 /* Debug */,
 				4C4A5331150F289500990664 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		668786651510F7A70053F937 /* Build configuration list for PBXNativeTarget "InAppPurchasingExample Frankified" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				668786661510F7A70053F937 /* Debug */,
-				668786671510F7A70053F937 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
