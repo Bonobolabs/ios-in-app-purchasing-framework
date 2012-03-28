@@ -1,4 +1,7 @@
 #import "NSTimer+Test.h"
+// We know we're being bad and overriding methods implemented in the primary class but it's just for testing
+#pragma GCC diagnostic ignored "-Wobjc-protocol-method-implementation"
+
 
 @implementation NSTimer (Test)
 

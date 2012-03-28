@@ -1,9 +1,10 @@
 #import <Cedar-iOS/SpecHelper.h>
 #import <OCMock/OCMock.h>
-#import "IAPCatalogue.h"
-#import "IAPProduct.h"
+#import "IAPCatalogue+Test.h"
+#import "IAPProduct+Test.h"
 #import "SKProductsRequest+Test.h"
 #import "MockIAPCatalogueDelegate.h"
+#import "SKProduct+PriceWithCurrency.h"
 
 
 using namespace Cedar::Matchers;
@@ -75,15 +76,15 @@ describe(@"IAPCatalogue", ^{
             });   
             
             it(@"should update the catalogue with the product details", ^{
-                NSDecimalNumber* price = [NSDecimalNumber decimalNumberWithString:@"1.99"];
+                NSString* priceWithCurrency = @"$1.99";
                 NSString* productIdentifier = [requestedProductIdentifiers anyObject];
                 id mockSKProduct = [OCMockObject mockForClass:[SKProduct class]];
-                [[[mockSKProduct stub] andReturn:price] price];
+                [[[mockSKProduct stub] andReturn:priceWithCurrency] priceWithCurrency];
                 [[[mockSKProduct stub] andReturn:productIdentifier] productIdentifier];
                 NSArray* products = [NSArray arrayWithObject:mockSKProduct];
                 [request respondSuccess:products];
                 IAPProduct* updatedProduct = [catalogue productForIdentifier:productIdentifier];
-                BOOL samePrice = updatedProduct.price == [mockSKProduct price];
+                BOOL samePrice = updatedProduct.price == [mockSKProduct priceWithCurrency];
                 expect(samePrice).to(be_truthy());                
             });
             
@@ -117,6 +118,90 @@ describe(@"IAPCatalogue", ^{
                 BOOL notifiedDidFinishUpdating = [mockDelegate notifiedIAPCatalogueDidFinishUpdating:catalogue];
                 expect(notifiedUpdateFailedWithError).to_not(be_truthy());
                 expect(notifiedDidFinishUpdating).to_not(be_truthy());
+            });
+        });
+    });
+    
+    describe(@"purchaseProduct:", ^{
+        __block id mockPaymentQueue;
+        __block id mockProduct;
+        __block id mockSKProduct;
+        __block id mockTransaction;
+        __block NSArray* mockTransactions;
+        
+        beforeEach(^{
+            mockProduct = [OCMockObject mockForClass:[IAPProduct class]];
+            [[[mockProduct stub] andReturn:@"com.iap.product1"] identifier];
+            NSDictionary* mockProducts = [NSDictionary dictionaryWithObject:mockProduct forKey:@"com.iap.product1"];
+            catalogue.products = mockProducts;
+            mockSKProduct = [OCMockObject mockForClass:[SKProduct class]];
+            [[[mockSKProduct stub] andReturn:@"com.iap.product1"] productIdentifier];
+            mockPaymentQueue = [OCMockObject niceMockForClass:[SKPaymentQueue class]];
+            catalogue.paymentQueue = mockPaymentQueue;
+            mockTransaction = [OCMockObject mockForClass:[SKPaymentTransaction class]];
+            id mockSKPayment = [OCMockObject mockForClass:[SKPayment class]];
+            [[[mockSKPayment stub] andReturn:@"com.iap.product1"] productIdentifier];
+            [[[mockTransaction stub] andReturn:mockSKPayment] payment];
+            mockTransactions = [NSArray arrayWithObject:mockTransaction];
+        });
+                
+        it(@"should raise an exception if the product hasn't been loaded from Apple yet", ^{
+            BOOL raised = NO;
+            try {
+                [catalogue purchaseProduct:mockProduct];
+            }
+            catch(NSException* e) {
+                raised = YES;
+            }
+            // Cedar expect(^{}).to(raise_exception) wasn't working for me
+            expect(raised).to(be_truthy);
+        });
+        
+        it(@"should send the purchase request to Apple and update the product with the payment info if the product has been loaded from Apple", ^{
+            NSArray* mockSKProducts = [NSArray arrayWithObject:mockSKProduct];
+            [[mockPaymentQueue expect] addPayment:[OCMArg isNotNil]];
+            [[mockProduct expect] updateWithSKPayment:[OCMArg isNotNil]];
+            [[mockProduct expect] updateWithSKProduct:[OCMArg isNotNil]];
+            [catalogue updateProducts:mockSKProducts];
+            [catalogue purchaseProduct:mockProduct];
+            [mockPaymentQueue verify];
+            [mockProduct verify];
+        });
+        
+        describe(@"on success", ^{
+            it(@"should update the product using the transaction given by apple and finish the transaction", ^ {
+                int transactionState = SKPaymentTransactionStatePurchased;
+                [[[mockTransaction stub] andReturn:OCMOCK_VALUE(transactionState)] transactionState]; 
+                [[mockProduct expect] updateWithSKPaymentTransaction:mockTransaction];
+                [[mockPaymentQueue expect] finishTransaction:mockTransaction];
+                [catalogue paymentQueue:mockPaymentQueue updatedTransactions:mockTransactions]; 
+                [mockProduct verify];
+                [mockPaymentQueue verify];
+            });
+        });
+        
+        describe(@"on error", ^{
+            it(@"should update the product using the transaction given by apple and finish the transaction", ^ {
+                int transactionState = SKPaymentTransactionStateFailed;
+                [[[mockTransaction stub] andReturn:OCMOCK_VALUE(transactionState)] transactionState]; 
+                [[mockProduct expect] updateWithSKPaymentTransaction:mockTransaction];
+                [[mockPaymentQueue expect] finishTransaction:mockTransaction];
+                [catalogue paymentQueue:mockPaymentQueue updatedTransactions:mockTransactions];    
+                [mockProduct verify];
+                [mockPaymentQueue verify];
+            });
+            
+        });
+        
+        describe(@"on restore", ^{
+            it(@"should update the product using the transaction given by apple and finish the transaction", ^ {
+                int transactionState = SKPaymentTransactionStateRestored;
+                [[[mockTransaction stub] andReturn:OCMOCK_VALUE(transactionState)] transactionState]; 
+                [[mockProduct expect] updateWithSKPaymentTransaction:mockTransaction];
+                [[mockPaymentQueue expect] finishTransaction:mockTransaction];
+                [catalogue paymentQueue:mockPaymentQueue updatedTransactions:mockTransactions];    
+                [mockProduct verify];
+                [mockPaymentQueue verify];
             });
         });
     });

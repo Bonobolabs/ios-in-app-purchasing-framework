@@ -1,108 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="tHS-0p-9hG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="hbT-Mp-WjM">
     <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
-        <scene sceneID="Ajz-lt-w0S">
+        <!--View Controller-->
+        <scene sceneID="LGG-ZW-1jY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5mP-9a-HKl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="hyi-4p-9xp" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ns3-bw-EYF">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CGB-74-Fvw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="hbT-Mp-WjM" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MhV-tN-hn8">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hGa-f0-5SD">
-                                <rect key="frame" x="102" y="211" width="116" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Load Products">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="T1G-i6-5ik">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="bBS-RB-5vX" kind="modal" id="Gg7-5S-ega"/>
+                                    <outlet property="dataSource" destination="hbT-Mp-WjM" id="xao-6f-CyR"/>
+                                    <outlet property="delegate" destination="hbT-Mp-WjM" id="duF-0b-KeS"/>
                                 </connections>
-                            </button>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="InAppPurchasingExample" id="M4b-yz-NcS"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="171" y="-1422"/>
-        </scene>
-        <scene sceneID="ZbM-jg-aJs">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NCe-Rf-dUD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController definesPresentationContext="YES" id="tHS-0p-9hG" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="51c-pd-BFM">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="hyi-4p-9xp" kind="relationship" relationship="rootViewController" id="jDk-QA-uTG"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="-445" y="-1422"/>
-        </scene>
-        <scene sceneID="e1k-of-sJc">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WCW-yP-99A" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="FIW-DF-Uru" customClass="ProductsController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="MLn-oh-A9A">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="product" id="ajQ-y2-ZKe">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </tableViewCell>
-                        </prototypes>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Products" id="0Hj-24-iOQ">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="iCm-Fo-cLN">
-                            <connections>
-                                <action selector="onBackButtonTouchUp:" destination="FIW-DF-Uru" id="AlQ-Ti-o9c"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="851" y="-683"/>
-        </scene>
-        <scene sceneID="F8i-Rg-yJk">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ceO-IY-Xj7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController definesPresentationContext="YES" id="bBS-RB-5vX" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Wev-iA-y55"/>
-                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="SHX-cU-ayN">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="FIW-DF-Uru" kind="relationship" relationship="rootViewController" id="kT8-0D-MBE"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="171" y="-683"/>
+            <point key="canvasLocation" x="-424" y="-1371"/>
         </scene>
     </scenes>
     <classes>
-        <class className="ProductsController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProductsController.h"/>
-            <relationships>
-                <relationship kind="action" name="onBackButtonTouchUp:"/>
-            </relationships>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

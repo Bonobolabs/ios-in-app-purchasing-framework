@@ -29,24 +29,20 @@
 		4C50165E1515A8C600C2DB9D /* FakeSKProductsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF989150F36A60086F6E3 /* FakeSKProductsResponse.m */; };
 		4C50165F1515A8C600C2DB9D /* SKProductsRequest+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF98B150F36A60086F6E3 /* SKProductsRequest+Test.m */; };
 		4C5016601515A8CF00C2DB9D /* MockIAPCatalogueDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF98E150F36A60086F6E3 /* MockIAPCatalogueDelegate.m */; };
-		4C50166A1515AF3E00C2DB9D /* FSMMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5016691515AF3E00C2DB9D /* FSMMachine.m */; };
+		4C85CA2C1516E9A9007E63B0 /* IAPCatalogue+Test.h in Resources */ = {isa = PBXBuildFile; fileRef = 4C85CA2B1516E9A9007E63B0 /* IAPCatalogue+Test.h */; };
 		4CAEF9AB150F46E40086F6E3 /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAEF9A9150F46D50086F6E3 /* Cedar-iOS.framework */; };
 		4CAEF9AD150F47540086F6E3 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAEF9AC150F47540086F6E3 /* StoreKit.framework */; };
 		4CAEF9AE150F477B0086F6E3 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAEF9AC150F47540086F6E3 /* StoreKit.framework */; };
 		4CAEF9D1150F72E50086F6E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CAEF9CE150F72C80086F6E3 /* InfoPlist.strings */; };
 		4CAEF9E6150F76CD0086F6E3 /* IAPCatalogue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF9E4150F76CD0086F6E3 /* IAPCatalogue.m */; };
+		4CC065C2151DCC40000E89ED /* IAPProduct+Friend.h in Resources */ = {isa = PBXBuildFile; fileRef = 4CC065C1151DCC40000E89ED /* IAPProduct+Friend.h */; };
+		4CC065C6151EFE50000E89ED /* SKProduct+PriceWithCurrency.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC065C5151EFE50000E89ED /* SKProduct+PriceWithCurrency.m */; };
+		4CC0667E1523437E000E89ED /* FSMMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC0667D1523437E000E89ED /* FSMMachine.m */; };
+		4CC06685152348FD000E89ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC06681152348FD000E89ED /* ViewController.m */; };
+		4CC06686152348FD000E89ED /* ProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC06684152348FD000E89ED /* ProductTableViewCell.m */; };
+		4CC0668815234C4B000E89ED /* IAPInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CC0668715234C4B000E89ED /* IAPInfo.plist */; };
 		661D83371510F85300DE6CAE /* InAppPurchasingExample Frankified-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 661D83361510F85300DE6CAE /* InAppPurchasingExample Frankified-Info.plist */; };
-		661D83421510F88100DE6CAE /* my_first.feature in Resources */ = {isa = PBXBuildFile; fileRef = 661D833A1510F88100DE6CAE /* my_first.feature */; };
-		661D83431510F88100DE6CAE /* launch_steps.rb in Resources */ = {isa = PBXBuildFile; fileRef = 661D833C1510F88100DE6CAE /* launch_steps.rb */; };
-		661D83441510F88100DE6CAE /* env.rb in Resources */ = {isa = PBXBuildFile; fileRef = 661D833E1510F88100DE6CAE /* env.rb */; };
-		661D83451510F88100DE6CAE /* frank_static_resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 661D833F1510F88100DE6CAE /* frank_static_resources.bundle */; };
-		661D83481510F8BE00DE6CAE /* libFrank.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 661D83401510F88100DE6CAE /* libFrank.a */; };
-		661D83491510F8BE00DE6CAE /* libShelley.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 661D83411510F88100DE6CAE /* libShelley.a */; };
 		661D834C1510F8E800DE6CAE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 661D834A1510F8C600DE6CAE /* CFNetwork.framework */; };
-		661D835A1511189B00DE6CAE /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 661D83591511189B00DE6CAE /* MenuController.m */; };
-		661D835B1511189B00DE6CAE /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 661D83591511189B00DE6CAE /* MenuController.m */; };
-		661D836515111C7000DE6CAE /* ProductsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 661D836415111C7000DE6CAE /* ProductsController.m */; };
-		661D836615111C7000DE6CAE /* ProductsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 661D836415111C7000DE6CAE /* ProductsController.m */; };
 		668786541510F7A70053F937 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A5306150F289500990664 /* main.m */; };
 		668786551510F7A70053F937 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A530A150F289500990664 /* AppDelegate.m */; };
 		6687865A1510F7A70053F937 /* IAPCatalogue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF9E4150F76CD0086F6E3 /* IAPCatalogue.m */; };
@@ -96,9 +92,7 @@
 		4C5016561515A82400C2DB9D /* IAPProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPProduct.m; sourceTree = "<group>"; };
 		4C5016571515A82400C2DB9D /* IAPProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPProduct.h; sourceTree = "<group>"; };
 		4C5016581515A82400C2DB9D /* IAPStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPStoreManager.h; sourceTree = "<group>"; };
-		4C5016661515AF1500C2DB9D /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		4C5016681515AF3E00C2DB9D /* FSMMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMMachine.h; sourceTree = "<group>"; };
-		4C5016691515AF3E00C2DB9D /* FSMMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMMachine.m; sourceTree = "<group>"; };
+		4C85CA2B1516E9A9007E63B0 /* IAPCatalogue+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IAPCatalogue+Test.h"; sourceTree = "<group>"; };
 		4CAEF981150F2BB40086F6E3 /* InAppPurchasingTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "InAppPurchasingTests-Info.plist"; path = "InAppPurchasingTests/InAppPurchasingTests-Info.plist"; sourceTree = SOURCE_ROOT; };
 		4CAEF988150F36A60086F6E3 /* FakeSKProductsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeSKProductsResponse.h; sourceTree = "<group>"; };
 		4CAEF989150F36A60086F6E3 /* FakeSKProductsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeSKProductsResponse.m; sourceTree = "<group>"; };
@@ -113,18 +107,18 @@
 		4CAEF9E3150F76CD0086F6E3 /* IAPCatalogue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPCatalogue.h; sourceTree = "<group>"; };
 		4CAEF9E4150F76CD0086F6E3 /* IAPCatalogue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPCatalogue.m; sourceTree = "<group>"; };
 		4CAEF9E5150F76CD0086F6E3 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		4CC065C1151DCC40000E89ED /* IAPProduct+Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IAPProduct+Friend.h"; sourceTree = "<group>"; };
+		4CC065C4151EFE50000E89ED /* SKProduct+PriceWithCurrency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKProduct+PriceWithCurrency.h"; sourceTree = "<group>"; };
+		4CC065C5151EFE50000E89ED /* SKProduct+PriceWithCurrency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKProduct+PriceWithCurrency.m"; sourceTree = "<group>"; };
+		4CC0667C1523437E000E89ED /* FSMMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSMMachine.h; path = "../../../../../Desktop/InAppPurchasingSample copy/InAppPurchasingSample/External/InAppPurchasing/FSMMachine.h"; sourceTree = "<group>"; };
+		4CC0667D1523437E000E89ED /* FSMMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSMMachine.m; path = "../../../../../Desktop/InAppPurchasingSample copy/InAppPurchasingSample/External/InAppPurchasing/FSMMachine.m"; sourceTree = "<group>"; };
+		4CC06680152348FD000E89ED /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4CC06681152348FD000E89ED /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4CC06683152348FD000E89ED /* ProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductTableViewCell.h; sourceTree = "<group>"; };
+		4CC06684152348FD000E89ED /* ProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductTableViewCell.m; sourceTree = "<group>"; };
+		4CC0668715234C4B000E89ED /* IAPInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = IAPInfo.plist; sourceTree = "<group>"; };
 		661D83361510F85300DE6CAE /* InAppPurchasingExample Frankified-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "InAppPurchasingExample Frankified-Info.plist"; sourceTree = "<group>"; };
-		661D833A1510F88100DE6CAE /* my_first.feature */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = my_first.feature; sourceTree = "<group>"; };
-		661D833C1510F88100DE6CAE /* launch_steps.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = launch_steps.rb; sourceTree = "<group>"; };
-		661D833E1510F88100DE6CAE /* env.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = env.rb; sourceTree = "<group>"; };
-		661D833F1510F88100DE6CAE /* frank_static_resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = frank_static_resources.bundle; sourceTree = "<group>"; };
-		661D83401510F88100DE6CAE /* libFrank.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFrank.a; sourceTree = "<group>"; };
-		661D83411510F88100DE6CAE /* libShelley.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libShelley.a; sourceTree = "<group>"; };
 		661D834A1510F8C600DE6CAE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		661D83581511189B00DE6CAE /* MenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuController.h; sourceTree = "<group>"; };
-		661D83591511189B00DE6CAE /* MenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuController.m; sourceTree = "<group>"; };
-		661D836315111C7000DE6CAE /* ProductsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsController.h; sourceTree = "<group>"; };
-		661D836415111C7000DE6CAE /* ProductsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsController.m; sourceTree = "<group>"; };
 		668786681510F7A70053F937 /* InAppPurchasingExample Frankified.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InAppPurchasingExample Frankified.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -158,8 +152,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				661D834C1510F8E800DE6CAE /* CFNetwork.framework in Frameworks */,
-				661D83481510F8BE00DE6CAE /* libFrank.a in Frameworks */,
-				661D83491510F8BE00DE6CAE /* libShelley.a in Frameworks */,
 				6687865C1510F7A70053F937 /* UIKit.framework in Frameworks */,
 				6687865D1510F7A70053F937 /* Foundation.framework in Frameworks */,
 				6687865E1510F7A70053F937 /* CoreGraphics.framework in Frameworks */,
@@ -173,7 +165,6 @@
 		4C4A52EB150F289400990664 = {
 			isa = PBXGroup;
 			children = (
-				4C5016531515A7AF00C2DB9D /* libOCMock.a */,
 				4C4A5300150F289500990664 /* InAppPurchasingExample */,
 				4C4A5321150F289500990664 /* InAppPurchasingTests */,
 				4C4A52F9150F289500990664 /* Frameworks */,
@@ -194,6 +185,7 @@
 		4C4A52F9150F289500990664 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C5016531515A7AF00C2DB9D /* libOCMock.a */,
 				661D834A1510F8C600DE6CAE /* CFNetwork.framework */,
 				4CAEF9AC150F47540086F6E3 /* StoreKit.framework */,
 				4CAEF9A9150F46D50086F6E3 /* Cedar-iOS.framework */,
@@ -208,14 +200,13 @@
 		4C4A5300150F289500990664 /* InAppPurchasingExample */ = {
 			isa = PBXGroup;
 			children = (
-				4C5016651515AF1500C2DB9D /* FiniteStateMachine */,
-				661D83571511189B00DE6CAE /* Controllers */,
+				4CC0667F152348FD000E89ED /* Controllers */,
+				4CC06682152348FD000E89ED /* Views */,
 				4CAEF9E2150F76CC0086F6E3 /* InAppPurchasing */,
 				4C4A5309150F289500990664 /* AppDelegate.h */,
 				4C4A530A150F289500990664 /* AppDelegate.m */,
 				4C4A530C150F289500990664 /* MainStoryboard_iPhone.storyboard */,
 				4C4A530F150F289500990664 /* MainStoryboard_iPad.storyboard */,
-				661D83381510F88100DE6CAE /* Frank */,
 				4C4A5301150F289500990664 /* Supporting Files */,
 			);
 			path = InAppPurchasingExample;
@@ -264,17 +255,6 @@
 			path = Specs;
 			sourceTree = "<group>";
 		};
-		4C5016651515AF1500C2DB9D /* FiniteStateMachine */ = {
-			isa = PBXGroup;
-			children = (
-				4C5016661515AF1500C2DB9D /* README */,
-				4C5016681515AF3E00C2DB9D /* FSMMachine.h */,
-				4C5016691515AF3E00C2DB9D /* FSMMachine.m */,
-			);
-			name = FiniteStateMachine;
-			path = Externals/FiniteStateMachine;
-			sourceTree = "<group>";
-		};
 		4CAEF987150F36A60086F6E3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +266,7 @@
 				4CAEF989150F36A60086F6E3 /* FakeSKProductsResponse.m */,
 				4CAEF98A150F36A60086F6E3 /* SKProductsRequest+Test.h */,
 				4CAEF98B150F36A60086F6E3 /* SKProductsRequest+Test.m */,
+				4C85CA2B1516E9A9007E63B0 /* IAPCatalogue+Test.h */,
 			);
 			name = Helpers;
 			path = InAppPurchasingTests/Helpers;
@@ -304,64 +285,40 @@
 		4CAEF9E2150F76CC0086F6E3 /* InAppPurchasing */ = {
 			isa = PBXGroup;
 			children = (
+				4CC0668715234C4B000E89ED /* IAPInfo.plist */,
+				4CC0667C1523437E000E89ED /* FSMMachine.h */,
+				4CC0667D1523437E000E89ED /* FSMMachine.m */,
 				4C5016551515A82400C2DB9D /* IAPStoreManager.m */,
 				4C5016581515A82400C2DB9D /* IAPStoreManager.h */,
 				4C5016561515A82400C2DB9D /* IAPProduct.m */,
 				4C5016571515A82400C2DB9D /* IAPProduct.h */,
+				4CC065C1151DCC40000E89ED /* IAPProduct+Friend.h */,
 				4CAEF9E3150F76CD0086F6E3 /* IAPCatalogue.h */,
 				4CAEF9E4150F76CD0086F6E3 /* IAPCatalogue.m */,
 				4CAEF9E5150F76CD0086F6E3 /* README */,
+				4CC065C4151EFE50000E89ED /* SKProduct+PriceWithCurrency.h */,
+				4CC065C5151EFE50000E89ED /* SKProduct+PriceWithCurrency.m */,
 			);
 			name = InAppPurchasing;
 			path = InAppPurchasingExample/Externals/InAppPurchasing;
 			sourceTree = SOURCE_ROOT;
 		};
-		661D83381510F88100DE6CAE /* Frank */ = {
+		4CC0667F152348FD000E89ED /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				661D83391510F88100DE6CAE /* features */,
-				661D833F1510F88100DE6CAE /* frank_static_resources.bundle */,
-				661D83401510F88100DE6CAE /* libFrank.a */,
-				661D83411510F88100DE6CAE /* libShelley.a */,
-			);
-			path = Frank;
-			sourceTree = "<group>";
-		};
-		661D83391510F88100DE6CAE /* features */ = {
-			isa = PBXGroup;
-			children = (
-				661D833A1510F88100DE6CAE /* my_first.feature */,
-				661D833B1510F88100DE6CAE /* step_definitions */,
-				661D833D1510F88100DE6CAE /* support */,
-			);
-			path = features;
-			sourceTree = "<group>";
-		};
-		661D833B1510F88100DE6CAE /* step_definitions */ = {
-			isa = PBXGroup;
-			children = (
-				661D833C1510F88100DE6CAE /* launch_steps.rb */,
-			);
-			path = step_definitions;
-			sourceTree = "<group>";
-		};
-		661D833D1510F88100DE6CAE /* support */ = {
-			isa = PBXGroup;
-			children = (
-				661D833E1510F88100DE6CAE /* env.rb */,
-			);
-			path = support;
-			sourceTree = "<group>";
-		};
-		661D83571511189B00DE6CAE /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				661D83581511189B00DE6CAE /* MenuController.h */,
-				661D83591511189B00DE6CAE /* MenuController.m */,
-				661D836315111C7000DE6CAE /* ProductsController.h */,
-				661D836415111C7000DE6CAE /* ProductsController.m */,
+				4CC06680152348FD000E89ED /* ViewController.h */,
+				4CC06681152348FD000E89ED /* ViewController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4CC06682152348FD000E89ED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4CC06683152348FD000E89ED /* ProductTableViewCell.h */,
+				4CC06684152348FD000E89ED /* ProductTableViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,7 +383,7 @@
 		4C4A52ED150F289400990664 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = Bonobo;
 			};
 			buildConfigurationList = 4C4A52F0150F289400990664 /* Build configuration list for PBXProject "InAppPurchasingExample" */;
@@ -457,11 +414,9 @@
 				4C4A530E150F289500990664 /* MainStoryboard_iPhone.storyboard in Resources */,
 				4C4A5311150F289500990664 /* MainStoryboard_iPad.storyboard in Resources */,
 				661D83371510F85300DE6CAE /* InAppPurchasingExample Frankified-Info.plist in Resources */,
-				661D83421510F88100DE6CAE /* my_first.feature in Resources */,
-				661D83431510F88100DE6CAE /* launch_steps.rb in Resources */,
-				661D83441510F88100DE6CAE /* env.rb in Resources */,
-				661D83451510F88100DE6CAE /* frank_static_resources.bundle in Resources */,
 				4C5016521515A72F00C2DB9D /* IAPInfo.plist in Resources */,
+				4CC065C2151DCC40000E89ED /* IAPProduct+Friend.h in Resources */,
+				4CC0668815234C4B000E89ED /* IAPInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CAEF9D1150F72E50086F6E3 /* InfoPlist.strings in Resources */,
+				4C85CA2C1516E9A9007E63B0 /* IAPCatalogue+Test.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,12 +465,13 @@
 				4C4A5307150F289500990664 /* main.m in Sources */,
 				4C4A530B150F289500990664 /* AppDelegate.m in Sources */,
 				4CAEF9E6150F76CD0086F6E3 /* IAPCatalogue.m in Sources */,
-				661D835A1511189B00DE6CAE /* MenuController.m in Sources */,
-				661D836515111C7000DE6CAE /* ProductsController.m in Sources */,
 				4C5016501515A71F00C2DB9D /* NSTimer+Test.m in Sources */,
 				4C5016591515A82400C2DB9D /* IAPStoreManager.m in Sources */,
 				4C50165A1515A82400C2DB9D /* IAPProduct.m in Sources */,
-				4C50166A1515AF3E00C2DB9D /* FSMMachine.m in Sources */,
+				4CC065C6151EFE50000E89ED /* SKProduct+PriceWithCurrency.m in Sources */,
+				4CC0667E1523437E000E89ED /* FSMMachine.m in Sources */,
+				4CC06685152348FD000E89ED /* ViewController.m in Sources */,
+				4CC06686152348FD000E89ED /* ProductTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,8 +495,6 @@
 				668786541510F7A70053F937 /* main.m in Sources */,
 				668786551510F7A70053F937 /* AppDelegate.m in Sources */,
 				6687865A1510F7A70053F937 /* IAPCatalogue.m in Sources */,
-				661D835B1511189B00DE6CAE /* MenuController.m in Sources */,
-				661D836615111C7000DE6CAE /* ProductsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
