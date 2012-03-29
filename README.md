@@ -26,7 +26,7 @@ Usage
 
 4. Link to the StoreKit.framework in XCode.
 
-5. Start the IAPStoreManager auto updating from your AppDelegate file. 
+5. Start the IAPStoreManager auto updating from your AppDelegate file. This will start the background process of fetching and updating the details and prices of your in app purchases. If it encounters an error it will periodically keep retrying to fetch the purchase's details.
 
         #import "IAPStoreManager.h"
 
@@ -36,9 +36,7 @@ Usage
 	        [[IAPStoreManager sharedInstance] autoUpdate];
 	        return YES;
 	    }
-
-This will start the background process of fetching and updating the details and prices of your in app purchases. If it encounters an error it will periodically keep retrying to fetch the purchase's details.
-
+	
 6. Purchase an in app purchase.
 
         - (void)buyButtonTapped:(id)sender {
@@ -46,58 +44,54 @@ This will start the background process of fetching and updating the details and 
 			[product purchase];
         }
 
-7. Monitor the state of an in app purchase.
-
-Implement the IAPProductObserver protocol.
+7. Monitor the state of an in app purchase by implementing the IAPProductObserver protocol.
 
 	@interface ProductTableViewCell : UITableViewCell<IAPProductObserver>
 
-Start observing the product.
+  // Start observing the product.
 
 	- (void)initProduct:(NSString*)productIdentifier {
 	    self.product = [[IAPStoreManager sharedInstance] productForIdentifier:@"com.bonobolabs.SingleBanana"];
 	    [self.product addObserver:self];
 	}
 
-The following methods will get called at each point in the In App Purchase's lifecycle.
-
-If an error is encountered.
+  // If an error is encountered.
 
 	- (void)iapProductJustErrored:(IAPProduct*)iapProduct {
 	    [self setButtonState]; 
 	}
 
-If we're requesting the In App Purchase's details from Apple.
+  // If we're requesting the In App Purchase's details from Apple.
 
 	- (void)iapProductJustStartedLoading:(IAPProduct*)iapProduct {
 	    [self setButtonState];    
 	}
 
-If we've received the In App Purchase's details from Apple.
+  // If we've received the In App Purchase's details from Apple.
 
 	- (void)iapProductJustBecameReadyForSale:(IAPProduct*)iapProduct {
 	    [self setButtonState];
 	}
 
-If a purchase was successfully made.
+  // If a purchase was successfully made.
 
 	- (void)iapProductWasJustPurchased:(IAPProduct*)iapProduct {
 	    [self setButtonState];
 	}
 
-If a purchase was successfully restored.
+  // If a purchase was successfully restored.
 
 	- (void)iapProductWasJustRestored:(IAPProduct*)iapProduct {
 	    [self setButtonState];
 	}
 
-If a purchase was initiated.
+  // If a purchase was initiated.
 
 	- (void)iapProductIsPurchasing:(IAPProduct*)iapProduct {
 	    [self setButtonState];
 	}
 
-Just a snippet that shows the purchase state in use.
+  // Just a snippet that shows the purchase state in use.
 
 	- (void)setButtonState {
 	    BOOL enabled = NO;
