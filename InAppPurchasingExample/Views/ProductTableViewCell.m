@@ -28,6 +28,10 @@
     return self;
 }
 
+- (void)dealloc {
+    [self.product removeObserver:self];
+}
+
 - (void)initActionButton {
     self.actionButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     self.actionButton.frame = CGRectMake(0, 0, 112, 37);
