@@ -14,17 +14,17 @@ Things InAppPurchasing does on top of StoreKit:
 Usage
 --------------
 
-# Add the InAppPurchasing submodule to your project by running the following command from the root directory of your project:
+1. Add the InAppPurchasing submodule to your project by running the following command from the root directory of your project:
 
 	git submodule add git@github.com:Bonobolabs/ios-in-app-purchasing.git External/InAppPurchasing
 
-# Add the InAppPurchasing folder to your project in XCode.
+2. Add the InAppPurchasing folder to your project in XCode.
 
-# Customise the IAPInfo.plist file by adding your specific purchase identifiers from iTunes Connect.
+3. Customise the IAPInfo.plist file by adding your specific purchase identifiers from iTunes Connect.
 
-# Link to the StoreKit.framework in XCode.
+4. Link to the StoreKit.framework in XCode.
 
-# Start the IAPStoreManager auto updating from your AppDelegate file. 
+5. Start the IAPStoreManager auto updating from your AppDelegate file. 
 
 	#import "IAPStoreManager.h"
 
@@ -37,14 +37,14 @@ Usage
 
 This will start the background process of fetching and updating the details and prices of your in app purchases. If it encounters an error it will periodically keep retrying to fetch the purchase's details.
 
-# Purchase an in app purchase.
+6. Purchase an in app purchase.
 
 	- (void)buyButtonTapped:(id)sender {
 			IAPProduct* product = [[IAPStoreManager sharedInstance] productForIdentifier:@"com.bonobolabs.SingleBanana"];
 	    [product purchase];
 	}
 
-# Monitor the state of an in app purchase.
+7. Monitor the state of an in app purchase.
 
 Implement the IAPProductObserver protocol.
 
@@ -122,7 +122,7 @@ Just a snippet that shows the purchase state in use.
 	    [self.actionButton setTitle:title forState:UIControlStateNormal];
 	}
 
-# Remember to remove the observer when you're done with it:
+8. Remember to remove the observer when you're done with it:
 
 	- (void)dealloc {
 	    [self.product removeObserver:self];
