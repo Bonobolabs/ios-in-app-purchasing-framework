@@ -1,9 +1,11 @@
+
 Purpose
 --------------
 
 InAppPurchasing is an easy wrapper around the StoreKit API that makes some of the more tedious aspects of In App Purchasing easier. It is written in Objective C for iPhone applications and uses Cedar for unit tests. 
 
 Things InAppPurchasing does on top of StoreKit:
+
 * Loads the prices of your in app purchases in the background.
 * Updates the prices off your in app purchase in the background (in case they change).
 * Provides a unified interface for fetching a purchase's details and price.
@@ -14,9 +16,9 @@ Things InAppPurchasing does on top of StoreKit:
 Usage
 --------------
 
-1. Add the InAppPurchasing submodule to your project by running the following command from the root directory of your project:
+1. Add the InAppPurchasing submodule to your project by running the following command from the root directory of your project.
 
-	git submodule add git@github.com:Bonobolabs/ios-in-app-purchasing.git External/InAppPurchasing
+        git submodule add git@github.com:Bonobolabs/ios-in-app-purchasing.git External/InAppPurchasing
 
 2. Add the InAppPurchasing folder to your project in XCode.
 
@@ -26,23 +28,23 @@ Usage
 
 5. Start the IAPStoreManager auto updating from your AppDelegate file. 
 
-	#import "IAPStoreManager.h"
+        #import "IAPStoreManager.h"
 
-	- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-	{
-	    // Override point for customization after application launch.
-	    [[IAPStoreManager sharedInstance] autoUpdate];
-	    return YES;
-	}
+        - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+        {
+            // Override point for customization after application launch.
+	        [[IAPStoreManager sharedInstance] autoUpdate];
+	        return YES;
+	    }
 
 This will start the background process of fetching and updating the details and prices of your in app purchases. If it encounters an error it will periodically keep retrying to fetch the purchase's details.
 
 6. Purchase an in app purchase.
 
-	- (void)buyButtonTapped:(id)sender {
+        - (void)buyButtonTapped:(id)sender {
 			IAPProduct* product = [[IAPStoreManager sharedInstance] productForIdentifier:@"com.bonobolabs.SingleBanana"];
-	    [product purchase];
-	}
+			[product purchase];
+        }
 
 7. Monitor the state of an in app purchase.
 
@@ -124,16 +126,11 @@ Just a snippet that shows the purchase state in use.
 
 8. Remember to remove the observer when you're done with it:
 
-	- (void)dealloc {
-	    [self.product removeObserver:self];
-	}
+        - (void)dealloc {
+          [self.product removeObserver:self];
+        }
 
 Tests & Sample Project
 --------------
 
 We've split InAppPurchasing out into its own repository to make it easy to add to your project as a submodule. If you'd like to view the sample project and run the tests they are available at https://github.com/Bonobolabs/ios-in-app-purchasing-framework
-
-
-
-
-
