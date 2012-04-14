@@ -1,4 +1,3 @@
-
 Purpose
 --------------
 
@@ -7,7 +6,7 @@ InAppPurchasing is an easy wrapper around the StoreKit API that makes some of th
 Things InAppPurchasing does on top of StoreKit:
 
 * Loads the prices of your in app purchases in the background.
-* Updates the prices off your in app purchase in the background (in case they change).
+* Updates the prices of your in app purchase in the background (in case they change).
 * Provides a unified interface for fetching a purchase's details and price.
 * Provides a unified interface for observing changes in a purchase's state.
 * Remembers the prices of your purchases so you don't have to.
@@ -119,4 +118,4 @@ Usage
 Tests & Sample Project
 --------------
 
-We've split InAppPurchasing out into its own repository to make it easy to add to your project as a submodule. If you'd like to view the sample project and run the tests they are available at https://github.com/Bonobolabs/ios-in-app-purchasing-framework
+InAppPurchasing has been separated out into its own repository to make it easy to add to your project as a submodule. If you'd like to view the sample project and run the tests they are available at https://github.com/Bonobolabs/ios-in-app-purchasing-framework
