@@ -98,8 +98,8 @@
 		4CC065C1151DCC40000E89ED /* IAPProduct+Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IAPProduct+Friend.h"; sourceTree = "<group>"; };
 		4CC065C4151EFE50000E89ED /* SKProduct+PriceWithCurrency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKProduct+PriceWithCurrency.h"; sourceTree = "<group>"; };
 		4CC065C5151EFE50000E89ED /* SKProduct+PriceWithCurrency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKProduct+PriceWithCurrency.m"; sourceTree = "<group>"; };
-		4CC0667C1523437E000E89ED /* FSMMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSMMachine.h; path = "../../../../../Desktop/InAppPurchasingSample copy/InAppPurchasingSample/External/InAppPurchasing/FSMMachine.h"; sourceTree = "<group>"; };
-		4CC0667D1523437E000E89ED /* FSMMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSMMachine.m; path = "../../../../../Desktop/InAppPurchasingSample copy/InAppPurchasingSample/External/InAppPurchasing/FSMMachine.m"; sourceTree = "<group>"; };
+		4CC0667C1523437E000E89ED /* FSMMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSMMachine.h; path = "FSMMachine.h"; sourceTree = "<group>"; };
+		4CC0667D1523437E000E89ED /* FSMMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSMMachine.m; path = "FSMMachine.m"; sourceTree = "<group>"; };
 		4CC06680152348FD000E89ED /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4CC06681152348FD000E89ED /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4CC06683152348FD000E89ED /* ProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductTableViewCell.h; sourceTree = "<group>"; };
