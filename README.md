@@ -6,7 +6,7 @@ InAppPurchasing is an easy wrapper around the StoreKit API that makes some of th
 Things InAppPurchasing does on top of StoreKit:
 
 * Loads the prices of your in app purchases in the background.
-* Updates the prices of your in app purchase in the background (in case they change).
+* Updates the prices off your in app purchase in the background (in case they change).
 * Provides a unified interface for fetching a purchase's details and price.
 * Provides a unified interface for observing changes in a purchase's state.
 * Remembers the prices of your purchases so you don't have to.
@@ -54,32 +54,12 @@ Usage
         }
 
         // If an error is encountered.
-        - (void)iapProductJustErrored:(IAPProduct*)iapProduct {
-          [self setButtonState]; 
-        }
-
         // If we're requesting the In App Purchase's details from Apple.
-        - (void)iapProductJustStartedLoading:(IAPProduct*)iapProduct {
-          [self setButtonState];    
-        }
-
         // If we've received the In App Purchase's details from Apple.
-        - (void)iapProductJustBecameReadyForSale:(IAPProduct*)iapProduct {
-          [self setButtonState];
-        }
-
         // If a purchase was successfully made.
-        - (void)iapProductWasJustPurchased:(IAPProduct*)iapProduct {
-          [self setButtonState];
-        }
-
         // If a purchase was successfully restored.
-        - (void)iapProductWasJustRestored:(IAPProduct*)iapProduct {
-          [self setButtonState];
-        }
-
         // If a purchase was initiated.
-        - (void)iapProductIsPurchasing:(IAPProduct*)iapProduct {
+        - (void)iapProductWasUpdated:(IAPProduct*)iapProduct {
           [self setButtonState];
         }
 
