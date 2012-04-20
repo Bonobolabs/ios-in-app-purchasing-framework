@@ -72,27 +72,7 @@
     [self.actionButton setTitle:title forState:UIControlStateNormal];
 }
 
-- (void)iapProductJustErrored:(IAPProduct*)iapProduct {
-    [self setButtonState]; 
-}
-
-- (void)iapProductJustStartedLoading:(IAPProduct*)iapProduct {
-    [self setButtonState];    
-}
-
-- (void)iapProductJustBecameReadyForSale:(IAPProduct*)iapProduct {
-    [self setButtonState];
-}
-
-- (void)iapProductWasJustPurchased:(IAPProduct*)iapProduct {
-    [self setButtonState];
-}
-
-- (void)iapProductWasJustRestored:(IAPProduct*)iapProduct {
-    [self setButtonState];
-}
-
-- (void)iapProductIsPurchasing:(IAPProduct*)iapProduct {
+- (void)iapProductWasUpdated:(IAPProduct*)iapProduct {
     [self setButtonState];
 }
 
